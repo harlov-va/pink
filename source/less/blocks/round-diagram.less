@@ -1,0 +1,19 @@
+.round-diagram {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .round-diagram {
+    display: flex;
+  }
+  .round-diagram__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .round-diagram__wrapper {
+    grid-template-columns: 1fr 2fr;
+  }
+}

@@ -1,0 +1,32 @@
+.main-head {
+  background: @black url(../../img/background_mobile.jpg) no-repeat;
+  margin: 0;
+
+}
+
+.main-head h2 {
+  margin: 0;
+  padding: 36px 26px 84px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-head {
+    background: @black url(../../img/background__tablet.jpg) no-repeat;
+  }
+
+  .main-head h2 {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-head {
+    background: @black url(../../img/background__desktop.jpg) no-repeat;
+  }
+}

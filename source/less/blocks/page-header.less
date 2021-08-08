@@ -1,0 +1,35 @@
+.page-header {
+  background-color: @black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 21px 20px;
+  z-index: 2;
+  height: 66px;
+}
+
+.page-header__logo {
+  background-image: url(../../img/logotype_mobile.svg);
+  width: 74px;
+  height: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+    z-index: 2;
+  }
+
+  .page-header__logo {
+    background-image: url(../../img/logotype_tablet.svg);
+    width: 145px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    padding: 0 130px;
+  }
+}

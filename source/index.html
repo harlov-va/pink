@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение "Пинк" - раскрась серые будни в розовый цвет</h1>
+      <section class="intro">
+        <header class="intro__header">
+          <h2 class="visually-hidden">Немного о приложении "Пинк"</h2>
+          <p class="intro__slogan">Взгляните на жизнь<br> иначе!</p>
+        </header>
+        <div class="intro__wrapper">
+          <button class="intro__button"><a href="https://apps.apple.com/ru/genre/ios/id36">Скачать приложение</a></button>
+          <ul class="intro__list apps-list">
+            <li class="apps-list__item">
+              <a href="https://apps.apple.com/ru/genre/ios/id36"><img src="img/apple_logo.svg" width="47" height="56" alt="Логотип apple"></a>
+            </li>
+            <li class="apps-list__item">
+              <a href="https://play.google.com/store/apps;"><img src="img/android_logo.svg" width="43" height="47" alt="Логотип android"></a>
+            </li>
+            <li class="apps-list__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img/microsoft_logo.svg" width="44" height="41" alt="Логотип microsoft"></a>
+            </li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="information">
+        <header class="information__header">
+          <h2 class="visually-hidden">Информация о приложении "Пинк"</h2>
+          <p class="information__slogan">Устали от серости мегаполиса?</p>
+          <p class="information__slogan">Нам есть, что вам предложить!</p>
+        </header>
+        <div class="information__wrapper">
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__item-head">Поднимает настроение</h3>
+              <p class="information__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__item-head">Меняет мир вокруг</h3>
+              <p class="information__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__item-head">Заводит новых друзей</h3>
+              <p class="information__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="information__picture" src="img/information-list_picture_smile.jpg" width="157" height="320" alt="Фотография на телефоне в розовом цвете">
+        </div>
+      </section>
+      <section class="round-diagram">
+        <h2 class="visually-hidden">Британские ученые о приложении "Пинк"</h2>
+        <div class="round-diagram__wrapper">
+          <img src="img/round_diagram_picture.svg" width="238" height="276" alt="Секундомер с цифрой 24">
+          <div class="round-diagram__info">
+            <h3 class="round-diagram__info-head">Эффект на 24 часа!</h3>
+            <p class="round-diagram__info-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="round-diagram__info-link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper reviews-slider">
+          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+          <div class="reviews__list">
+            <blockquote class="reviews__item reviews__item--petrov reviews-slider__item">
+              <cite class="reviews__item-author">Николай Петров</cite>
+              <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__item-info">25 лет, водитель трамвая</p>
+            </blockquote>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <p class="reviews__toggles reviews-slider__toggles">
+            <button class="reviews-slider__toggle reviews-slider__toggle--current" type="button">1</button>
+            <button class="reviews-slider__toggle" type="button">2</button>
+            <button class="reviews-slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper price-slider">
+          <h2 class="visually-hidden">Наши тарифы</h2>
+          <table class="price__table price__table--tablet">
+            <tr class="table-tablet">
+              <td class="table-tablet__head">Название тарифа</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Розовый фильтр</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Смайлики</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-line__text">Комментарии</td>
+            </tr>
+          </table>
+          <table class="price__table price__table--base price-slider__item">
+            <tr class="table-head">
+              <td class="table-name">База</td>
+              <td class="table-cost">1,99 USD</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Розовый фильтр</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Смайлики</td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Комментарии</td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+            </tr>
+          </table>
+
+          <table class="price__table price__table--standart price-slider__item">
+            <tr class="table-head">
+              <td class="table-name">Стандарт</td>
+              <td class="table-cost">3,99 USD</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Розовый фильтр</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Смайлики</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Комментарии</td>
+              <td class="table-no"><img src="img/price_table_no.svg"width="27" height="27" alt="Не входит в тариф"></td>
+            </tr>
+          </table>
+
+          <table class="price__table price__table--unlim price-slider__item">
+            <tr class="table-head">
+              <td class="table-name">Анлим</td>
+              <td class="table-cost">9,99 USD</td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Розовый фильтр</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Смайлики</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+            <tr class="table-line">
+              <td class="table-text">Комментарии</td>
+              <td class="table-yes"><img src="img/price_table_yes.svg" width="31" height="21" alt="Входит в тариф"></td>
+            </tr>
+          </table>
+          <p class="price__toggles price-slider__toggles">
+            <button class="price-slider__toggle" type="button">1</button>
+            <button class="price-slider__toggle price-slider__toggle--current" type="button">2</button>
+            <button class="price-slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <header class="contacts__header">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <p class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</p>
+          </header>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Звоните:</h3>
+              <a class="contacts__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Пишите:</h3>
+              <a class="contacts__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Приезжайте в гости:</h3>
+              <p class="contacts__item-link">ул. Большая<br> Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCUiYFWy-D" allowfullscreen="true" style="position: relative;"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logotype_footer.svg">
+        </div>
+        <div class="page-footer__social social">
+          <b class="visually-hidden">Мы в соцсетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><img src="img/twitter_icon.svg" width="48" height="48" alt="Мы в твиттере"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="img/facebook_icon.svg" width="48" height="48" alt="Мы в Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube_icon.svg" width="48" height="48" alt="Мы на ютюбе"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy_logo_footer.svg" width="27" height="34" alt="Логотип HTML Академии"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

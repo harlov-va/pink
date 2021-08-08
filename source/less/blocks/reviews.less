@@ -1,0 +1,42 @@
+.reviews__item {
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+
+.reviews__item-author {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  margin: 0 auto 31px;
+  text-align: center;
+}
+
+.reviews__item-text {
+  margin: 0 20px;
+  line-height: 30px;
+}
+
+.reviews__item-info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item-text {
+    order: 0;
+  }
+
+  // .reviews__item-author {
+  //   order: 2;
+  // }
+
+  .reviews__item-info {
+    display: inline;
+    // order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
