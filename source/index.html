@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,8 +32,8 @@
       
       <h1 class="visually-hidden">Photographs of users</h1>
       
-      <section class="stats">
-        <header class="header__app-stors stors">
+      <section class="intro">
+        <div class="intro__app-stors stors">
           <h2 class="stors__title visually-hidden">Look at life in another way</h2>
           <img class="stors__photo" src="./img/intro_background_mobile.jpg" width="320" height="462" alt="The future is in your hands"/>
           <a class="stors__download">Download app</a>
@@ -49,60 +49,15 @@
             </li>
           </ul>
           <p class="stors__description">Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </header>
-        <!-- <header class="stats__header">
-          <h2 class="visually-hidden">Статистика Барбершопа</h2>
-          <b class="stats__slogan">Стрижка у нас это выгодно!</b>
-          <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-          <small class="stats__legend stats__legend--top">
-            <sup>*</sup> — приведённые данные ложь
-          </small>
-        </header> -->
-        <!-- <table class="stats__list">
-          <tr>
-            <td class="stats__value">
-              1 500<sup>*</sup>
-            </td>
-            <td class="stats__field">
-              рублей<br> вложений
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              7 200
-            </td>
-            <td class="stats__field">
-              секунд<br> времени мастера
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              90 000
-            </td>
-            <td class="stats__field">
-              постриженных<br> волос
-            </td>
-          </tr>
-          <tr>
-            <td class="stats__value">
-              500 000<sup>*</sup>
-            </td>
-            <td class="stats__field">
-              лайков<br> и комплиментов
-            </td>
-          </tr>
-        </table>
-        <small class="stats__legend stats__legend--bottom">
-          <sup>*</sup> — приведённые данные ложь
-        </small>
-      </section> -->
+        </div>
+      </section>
 
       <section class="advantages">
-        <p class="advantages__slogan1">
+        <p class="advantages__intro">
           Устали от серости <br/> 
           мегаполиса?
         </p>          
-        <p class="advantages__slogan2">
+        <p class="advantages__slogan">
           Нам есть, что вам <br/>
           предложить!
         </p>
@@ -154,20 +109,145 @@
           </p>
         </div>
       </section>
-    </main>
-    
+      <section class="price">
+        <div class="price__list  slider__list">
+          <blockquote class="price__item  slider__item">              
+            <table>
+              <tr>
+                <th class="price__value" colspan="2">
+                  base
+                  <span class="price__cost">1,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Pink filter
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Smiles
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_no.svg" alt="unchecked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Comments
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_no.svg" alt="unchecked">
+                </td>
+              </tr>
+            </table>
+          </blockquote>
+          <blockquote class="price__item  slider__item">
+            <table>
+              <tr>
+                <th class="price__value" colspan="2">
+                  standart
+                  <span class="price__cost">3,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Pink filter
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Smiles
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Comments
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_no.svg" alt="unchecked">
+                </td>
+              </tr>
+            </table>
+          </blockquote> 
+          <blockquote class="price__item  slider__item">
+            <table>
+              <tr>
+                <th class="price__value" colspan="2">
+                  unlimit
+                  <span class="price__cost">9,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Pink filter
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Smiles
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+              <tr>
+                <td class="price__value">
+                  Comments
+                </td>
+                <td class="price__field">
+                  <img src="./img/price_table_yes.svg" alt="checked">
+                </td>
+              </tr>
+            </table>
+          </blockquote>           
+        </div>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>        
+      </section>
+    </main>  
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Барбершоп «Бородинский»</b>
-          <p class="contacts__text">
-            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-            <a class="contacts__phone" href="tel:+78125556666">
-              <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-            </a>
-          </p>
+          <b class="contacts__title">Do you have questions? <br/> Contact us</b>
+          <ul class="contacts__text">
+            <li class="contacts__item">
+              Call us:
+              <a class="contacts__phone" href="tel:+19125553333">
+                +1 (912) 555-33-33
+              </a>  
+            </li>            
+            <li class="contacts__item">
+              Write us:
+              <a class="contacts__email" href="mail:mail@company.com">
+                mail@company.com
+              </a>  
+            </li>
+            <li class="contacts__item">
+              Drive to us:
+              <a class="contacts__address" href="/">
+                Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
+              </a>  
+            </li>
+          </ul>
+          <img src="./img/contacts_map.jpg" alt="Map">
         </div>
-
       </div>
     </footer>
   </body>
