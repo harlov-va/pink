@@ -36,15 +36,15 @@
             <ul class="name-data__list">
               <li class="name-data__item">
                 <label for="lastname">Last name:</label>
-                <input type="text" id="lastname" placeholder="Write the last name *" required>                
+                <input type="text" name="lastname" id="lastname" placeholder="Write the last name *" required>                
               </li>
               <li class="name-data__item">
                 <label for="firstname">First name:</label>
-                <input type="text" id="firstname" placeholder="Write the first name *" required>                
+                <input type="text" name="firstname" id="firstname" placeholder="Write the first name *" required>                
               </li>
               <li class="name-data__item">
                 <label for="middlename">Middle name:</label>
-                <input type="text" id="middlename" placeholder="Write the middle name">
+                <input type="text" name="middlename" id="middlename" placeholder="Write the middle name">
               </li>
             </ul>
           </fieldset>
@@ -54,27 +54,27 @@
             <ul class="achivements__list">
               <li class="achivements__item">
                 <label class="achivements__label" for="selfie">Take a selfie with a shark</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="selfie" checked>
+                <input class="achivements__checkbox visually-hidden" name="selfie" type="checkbox" id="selfie" checked>
               </li>
               <li class="achivements__item">
                 <label class="achivements__label" for="beach">You have burnt your skin on the beach</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="beach" checked>
+                <input class="achivements__checkbox visually-hidden" name="beach" type="checkbox" id="beach" checked>
               </li>
               <li class="achivements__item">
                 <label class="achivements__label" for="chack">You have seen Chack Norris</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="chack" >
+                <input class="achivements__checkbox visually-hidden" name="chack" type="checkbox" id="chack" >
               </li>
               <li class="achivements__item">
                 <label class="achivements__label" for="souvenirs">You have bought souvenirs</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="souvenirs" >
+                <input class="achivements__checkbox visually-hidden" name="souvenirs" name="middlename" type="checkbox" id="souvenirs" >
               </li>
               <li class="achivements__item">
                 <label class="achivements__label" for="tower">You have held a tower</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="tower" checked>
+                <input class="achivements__checkbox visually-hidden" name="tower" type="checkbox" id="tower" checked>
               </li>
               <li class="achivements__item">
                 <label class="achivements__label" for="hotel">You have damaged a hotel</label>
-                <input class="achivements__checkbox visually-hidden" type="checkbox" id="hotel" >
+                <input class="achivements__checkbox visually-hidden" name="hotel" type="checkbox" id="hotel" >
               </li>
             </ul>
           </fieldset>
@@ -83,11 +83,11 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label for="phone">Phone number</label>
-                <input type="tel" id="phone" placeholder="Please give you phone number">
+                <input type="tel" name="phone" id="phone" placeholder="Please give you phone number">
               </li>
               <li class="contacts__item">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Please give you email">
+                <input type="email" name="email" id="email" placeholder="Please give you email">
               </li>
             </ul>
           </fieldset>
@@ -96,21 +96,21 @@
             <ul class="apps__list">
               <li class="apps__item">
                 <label class="apps__label" for="ios">Pink for iOS</label>
-                <input class="apps__radio visually-hidden" type="radio" id="ios">
+                <input class="apps__radio visually-hidden" name="ios" type="radio" id="ios">
               </li>
               <li class="apps__item">
                 <label class="apps__label" for="android">Pink for Android</label>
-                <input class="apps__radio visually-hidden" type="radio" id="android">
+                <input class="apps__radio visually-hidden" name="android" type="radio" id="android">
               </li>
               <li class="apps__item">
                 <label class="apps__label" for="windows">Pink for Windows Phone</label>
-                <input class="apps__radio visually-hidden" type="radio" id="windows">
+                <input class="apps__radio visually-hidden" name="windows" type="radio" id="windows">
               </li>
             </ul>
           </fieldset>
           <fieldset class="comments">
             <h3 class="comments__title"></h3>
-            <textarea class="comments__description" id="comments-description" placeholder="You will say emotionally and will not be shy"></textarea>
+            <textarea class="comments__description" name="comments-description" id="comments-description" rows="5" cols="25%" placeholder="You will write emotionally and will not be shy"></textarea>
           </fieldset>
           <button class="main-form__button button" type="submit">Send</button>
           <p class="main-form__footnote">&ast; &ndash; required field</p>
@@ -124,15 +124,21 @@
           <b class="social__title visually-hidden">We are in social media</b>
           <ul class="social__text">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="/"></a>  
-            </li>            
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="/"></a>  
+              <a class="social__link social__link--twitter" href="/">
+                <img src="img/twitter_icon.svg" width="48" height="48" alt="Twitter">
+              </a>
             </li>
             <li class="social__item">
-               <a class="social__link social__link--youtube" href="/"></a>  
+              <a class="social__link social__link--facebook" href="/">
+                <img src="img/facebook_icon.svg" width="48" height="48" alt="Facebook">
+              </a>
             </li>
-          </ul>          
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="/">
+                <img src="img/youtube_icon.svg" width="48" height="48" alt="Youtube">
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Made by:</b>
