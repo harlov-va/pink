@@ -1,3 +1,29 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 325px;
 
+  background-color: #283645;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+
+  .page-header__logo-image {
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__toggle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-header__logo-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+
