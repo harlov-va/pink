@@ -1,13 +1,22 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  min-height: 325px;
+  min-height: 262px;
 
   background-color: #283645;
 
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
+
+  .page-header__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+  }
 
   .page-header__logo-image {
     background-position: center;
@@ -18,11 +27,6 @@
   .page-header__toggle {
     width: 24px;
     height: 24px;
-  }
-
-  .page-header__logo-container {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
