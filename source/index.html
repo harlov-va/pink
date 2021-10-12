@@ -85,9 +85,7 @@
             <p class="advatages__description">Like, comment, share photos with friends and make new ones</p>
           </li>
         </ul>
-        <picture>
-          <img class="advantages__hello" src="./img/information-list_picture_smile.jpg" width="157" height="330" alt="Hello everybody"/>
-        </picture>
+        <img class="advantages__hello" src="./img/information-list_picture_smile.jpg" width="157" height="330" alt="Hello everybody"/>
       </section>
 
 
@@ -99,11 +97,11 @@
               <cite class="reviews__author-name">John Edwood</cite>
               <p class="reviews__text">This application's turned my world upside down and allowed me to take a fresh look at the usual gray things! And I've also met my future wife in the comments to the posted photo!</p>
             </blockquote>
-            <blockquote class="reviews__item  slider__item">
+            <blockquote class="reviews__item  slider__item visually-hidden">
               <cite class="reviews__author-name">Travis Smith</cite>
               <p class="reviews__text">The guys's done a great job as for me.</p>
             </blockquote>
-            <blockquote class="reviews__item  slider__item">
+            <blockquote class="reviews__item  slider__item visually-hidden">
               <cite class="reviews__author-name">Ivanka Trump</cite>
               <p class="reviews__text">In the app, your photos will take on a new life</p>
             </blockquote>
@@ -116,8 +114,9 @@
         </div>
       </section>
       <section class="price">
+        <div class="price__wrapper slider">
         <div class="price__list  slider__list">
-          <blockquote class="price__item  slider__item">
+          <blockquote class="price__item  slider__item  visually-hidden">
             <table>
               <tr>
                 <th class="price__value" colspan="2">
@@ -152,11 +151,11 @@
             </table>
           </blockquote>
           <blockquote class="price__item  slider__item">
-            <table>
+            <table class="price__table">
               <tr>
-                <th class="price__value" colspan="2">
-                  standart
-                  <span class="price__cost">3,99 USD</span>
+                <th class="price__header-name" colspan="2">
+                  standart </br>
+                  <span class="price__header-cost">3,99 USD</span>
                 </th>
               </tr>
               <tr>
@@ -185,7 +184,7 @@
               </tr>
             </table>
           </blockquote>
-          <blockquote class="price__item  slider__item">
+          <blockquote class="price__item  slider__item visually-hidden">
             <table>
               <tr>
                 <th class="price__value" colspan="2">
@@ -225,6 +224,7 @@
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
+      </div>
       </section>
     </main>
 

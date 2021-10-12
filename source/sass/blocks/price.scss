@@ -1,3 +1,60 @@
 .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 87px;
+    padding-bottom: 47px;
 
+    line-height: 30px;
+
+    .price__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .price__item {
+        margin: 0;
+    }
+
+   .price__header-name {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        line-height: inherit;
+    }
+
+    .price__header-cost {
+        font-size: 24px;
+        font-weight: 300;
+        color: white;
+        line-height: inherit;
+    }
+
+    .price__value {
+        line-height: inherit;
+    }
+}
+
+.price__table {
+    width: 276px;
+    // table-layout: fixed;
+    border-collapse: collapse;
+
+    th {
+        height: 94px;
+        background-color: #283645;
+    }
+
+    td {
+        height: 59px;
+        text-transform: uppercase;
+    }
+
+    .price__value {
+        width: 80%;
+    }
+
+    .price__field {
+        width: 20%;
+    }
 }
