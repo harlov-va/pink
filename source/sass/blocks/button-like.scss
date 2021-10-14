@@ -1,0 +1,11 @@
+.button-like {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+  .button-like__picture {
+    margin-right: 19px;
+  }
+}

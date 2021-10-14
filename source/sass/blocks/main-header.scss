@@ -1,6 +1,21 @@
 .main-header {
-    background-image: url("../../img/background_mobile.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 237px;
+
+  background-image: url("../../img/background_mobile.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: white;
+
+  .main-header__title {
+    font: inherit;
+    text-align: center;
+  }
 }
