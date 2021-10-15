@@ -1,5 +1,4 @@
 .upload {
-  margin-bottom: 50px;
   .upload__slogan p {
     margin: 0;
     text-align: center;
@@ -32,7 +31,14 @@
 }
 
 .upload__buttons-wrapper {  
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
   border-top: 1px solid rgba(221, 223, 224, 0.9);
+
+  .upload__buttons:first-child {
+    margin-bottom: 12px;
+  }
 }
 
 .upload__options.tools {
