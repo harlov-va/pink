@@ -1,0 +1,36 @@
+.user-contacts {
+    padding: 41px 20px 44px 20px;
+
+    .user-contacts__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .user-contacts__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+
+        & input {
+            padding: 22px;
+            font-size: 18px;
+            line-height: 30px;
+            border: 2px solid #e5e5e5;
+        }
+
+        & label {
+            padding-left: 20px;
+            margin-bottom: 16px;
+            line-height: 30px;
+        }
+    } 
+
+    .user-contacts__item:last-child {
+        margin-bottom: 0;
+    }
+}

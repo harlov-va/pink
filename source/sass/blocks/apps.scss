@@ -1,0 +1,24 @@
+.apps {
+    padding: 41px 20px 44px 20px;
+    background-color: #e5e5e5;
+
+    .apps__item {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .apps__title {
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+    }
+
+    .apps__label {
+        font-size: 18px;
+        line-height: 18px;        
+    }
+
+}
