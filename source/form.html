@@ -21,11 +21,11 @@
             <li class="site-list__item">
               <a href="index.html">Main</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
-              <a >Photos</a>
-            </li>
             <li class="site-list__item">
-              <a href="form.html">Competition</a>
+              <a href="photo.html">Photos</a>
+            </li>
+            <li class="site-list__item  site-list__item--active">
+              <a>Competition</a>
             </li>
           </ul>
         </div>
@@ -161,15 +161,23 @@
     </footer>
 
     <section class="modal modal--success">
-      <h4 class="modal__title">Your application has been applied</h4>
-      <p class="modal__text">Thank you for your participation, your application has already been received. We will consider as soon as possible and notify you</p>
-      <button class="modal__button button modal__button--success">close the window</button>
+      <div class="modal__text-wrapper">
+        <h4 class="modal__title">Your application has been applied</h4>
+        <p class="modal__text">Thank you for your participation, your application has already been received. We will consider as soon as possible and notify you</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button button modal__button--success">close the window</button>
+      </div>
     </section>
 
     <section class="modal modal--failure">
-      <h4 class="modal__title">Something has happened wrong</h4>
-      <p class="modal__text">You will check the fields which are highlighted the colour red. You probably have forgotten to fill them</p>
-      <button class="modal__button button modal__button--failure">ok</button>
+      <div class="modal__text-wrapper">
+        <h4 class="modal__title">Something has happened wrong</h4>
+        <p class="modal__text">You will check the fields which are highlighted the colour red. You probably have forgotten to fill them</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button button modal__button--failure">ok</button>
+      </div>
     </section>
   </body>
 </html>

@@ -1,15 +1,33 @@
 .modal {
-  padding: 0 20px;
+  padding: 41px 0 52px;
   font-size: 18px;
   font-weight: bold;
   text-align:  center;
 
+  box-shadow: 0 7px 15px 15px rgba(0, 0, 0, 0.15);
+
+  .modal__text-wrapper {
+    padding: 0 20px;
+  }
+
   .modal__title {
     color: black;
+    margin-top: 0;
+    margin-bottom: 33px;
   }
 
   .modal__text {
     font-size: 14px;
     font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
+
+  &.modal--success{
+    padding-bottom: 0;
+    .modal__button-wrapper {
+      padding: 33px 0 52px;
+      background-color: #f2f2f2;
+    }
   }
 }
