@@ -1,0 +1,25 @@
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: c;
+    padding: 41px 20px 52px 20px;
+
+    .comments__title {
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .comments__description {
+        width: 276px;
+        height: 197px;
+
+        padding: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #283645;
+        border: 2px solid #e5e5e5;
+        resize: none;
+    }
+}
