@@ -31,7 +31,7 @@
         </div>
       </nav>
     </header>
-    <main>      
+    <main>
       <div class="main-header">
         <h1 class="main-header__title">It's the competition of <br>the craziest<br> trip with Pink</h1>
       </div>
@@ -44,11 +44,11 @@
             <ul class="name-data__list">
               <li class="name-data__item">
                 <label for="lastname">Last name:</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Write the last name *" required>                
+                <input type="text" name="lastname" id="lastname" placeholder="Write the last name *" required>
               </li>
               <li class="name-data__item">
                 <label for="firstname">First name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Write the first name *" required>                
+                <input type="text" name="firstname" id="firstname" placeholder="Write the first name *" required>
               </li>
               <li class="name-data__item">
                 <label for="middlename">Middle name:</label>
@@ -123,8 +123,10 @@
             <h3 class="comments__title">Describe your emotions</h3>
             <textarea class="comments__description" name="comments-description" id="comments-description" rows="5" cols="25%" placeholder="You will write emotionally and will not be shy"></textarea>
           </fieldset>
-          <button class="main-form__button button" type="submit">Send</button>
-          <p class="main-form__footnote">&ast; &ndash; required field</p>
+          <div class="main-form__footer">
+            <button class="main-form__button button" type="submit">Send</button>
+            <p class="main-form__footnote"><span class="main-form__star">&ast;</span> &ndash; required field</p>
+          </div>
         </form>
       </section>
     </main>
@@ -157,7 +159,7 @@
         </div>
       </div>
     </footer>
-    
+
     <section class="modal modal--success">
       <h4 class="modal__title">Your application has been applied</h4>
       <p class="modal__text">Thank you for your participation, your application has already been received. We will consider as soon as possible and notify you</p>

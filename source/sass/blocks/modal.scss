@@ -1,0 +1,15 @@
+.modal {
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align:  center;
+
+  .modal__title {
+    color: black;
+  }
+
+  .modal__text {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
