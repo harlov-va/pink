@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: c;
-    padding: 41px 20px 52px 20px;
+    padding: 41px 0 52px;
 
     .comments__title {
         font-size: 14px;
@@ -15,7 +15,7 @@
         width: 276px;
         height: 197px;
 
-        padding: 20px;
+        padding: 20px 0;
         font-size: 18px;
         line-height: 30px;
         color: #283645;

@@ -1,6 +1,7 @@
 @import '../utils/variables.scss';
 
 .intro {
+    background-color: $bg-darkblue;
     background: url("../../img/intro_background_mobile.png")  no-repeat top left;
     background-size: 100% 100%;
 }

@@ -33,7 +33,7 @@
 .upload__buttons-wrapper {  
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 40px 0;
   border-top: 1px solid rgba(221, 223, 224, 0.9);
 
   .upload__buttons:first-child {
@@ -42,5 +42,5 @@
 }
 
 .upload__options.tools {
-  padding: 0 20px;
+  padding: 0;
 }

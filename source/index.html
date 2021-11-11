@@ -8,14 +8,16 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <h2 class="page-header__title visually-hidden">Menu</h2>
-      <div class="page-header__logo-container">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logotype_mobile.svg" width="75" height="22" alt="Pink">
-        </a>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
-      </div>
-      <nav class="main-nav">
+      <div class="container">
+        <h2 class="page-header__title visually-hidden">Menu</h2>      
+        <div class="page-header__logo-container">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logotype_mobile.svg" width="75" height="22" alt="Pink">
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+        </div>
+      </div>      
+      <nav class="main-nav visually-hidden">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -29,67 +31,70 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav>      
     </header>
 
     <main class="page-main">
-
       <h1 class="visually-hidden">Photographs of users</h1>
 
       <section class="intro">
-        <div class="intro__app-stors stors">
-          <div class="stors__photo-wrapper">
-            <div class="stors__photo"></div>
-          </div>
-          <div class="stors__buttons-wrapper">
-            <h2 class="stors__title visually-hidden">Look at life in another way</h2>
-            <a class="stors__download">Download app</a>
-            <ul class="stors__list">
-              <li class="stors__item">
-                <a class="stors__link stors__link--apple" href="https://www.apple.com/store">
-                  <img src="img/apple_logo.svg" alt="App Store">
-                </a>
-              </li>
-              <li class="stors__item">
-                <a class="stors__link stors__link--android" href="https://play.google.com/store">
-                  <img src="img/android_logo.svg" alt="Google Play">
-                </a>
-              </li>
-              <li class="stors__item">
-                <a class="stors__link stors__link--microsoft" href="https://www.microsoft.com/">
-                  <img src="img/microsoft_logo.svg" alt="Microsoft Store">
-                </a>
-              </li>
-            </ul>
-            <p class="stors__description">Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 12</p>
+        <div class="container">
+          <div class="intro__app-stors stors">
+            <div class="stors__photo-wrapper">
+              <div class="stors__photo"></div>
+            </div>
+            <div class="stors__buttons-wrapper">
+              <h2 class="stors__title">Look at life in another way</h2>
+              <a class="stors__download">Download app</a>
+              <ul class="stors__list">
+                <li class="stors__item">
+                  <a class="stors__link stors__link--apple" href="https://www.apple.com/store">
+                    <img src="img/apple_logo.svg" alt="App Store">
+                  </a>
+                </li>
+                <li class="stors__item">
+                  <a class="stors__link stors__link--android" href="https://play.google.com/store">
+                    <img src="img/android_logo.svg" alt="Google Play">
+                  </a>
+                </li>
+                <li class="stors__item">
+                  <a class="stors__link stors__link--microsoft" href="https://www.microsoft.com/">
+                    <img src="img/microsoft_logo.svg" alt="Microsoft Store">
+                  </a>
+                </li>
+              </ul>
+              <p class="stors__description">Available for iPhone, iPad, Android, Windows Phone, OS X, Windows 12</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="advantages">
-        <p class="advantages__intro">
-          Are you tired of the dullness<br/>
-          of the megalopolis?
-        </p>
-        <p class="advantages__slogan">
-          We have something<br/>
-          to offer you!
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Cheers up</h3>
-            <p class="advatages__description">The application will allow you to defeat the autumn blues and depression in just a few clicks!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Changes the world around</h3>
-            <p class="advatages__description">Take a photo and decorate it with an emoticon or text to enhance the effect</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Makes new friends</h3>
-            <p class="advatages__description">Like, comment, share photos with friends and make new ones</p>
-          </li>
-        </ul>
-        <img class="advantages__hello" src="./img/information-list_picture_smile.jpg" width="157" height="330" alt="Hello everybody"/>
+        <div class="container">
+          <p class="advantages__intro">
+            Are you tired of the dullness<br/>
+            of the megalopolis?
+          </p>
+          <p class="advantages__slogan">
+            We have something<br/>
+            to offer you!
+          </p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Cheers up</h3>
+              <p class="advatages__description">The application will allow you to defeat the autumn blues and depression in just a few clicks!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Changes the world around</h3>
+              <p class="advatages__description">Take a photo and decorate it with an emoticon or text to enhance the effect</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Makes new friends</h3>
+              <p class="advatages__description">Like, comment, share photos with friends and make new ones</p>
+            </li>
+          </ul>
+          <img class="advantages__hello" src="./img/information-list_picture_smile.jpg" width="157" height="330" alt="Hello everybody"/>
+        </div>
       </section>
 
 
@@ -235,27 +240,29 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Do you have any questions? <br/> Contact us</b>
-          <ul class="contacts__text">
-            <li class="contacts__item">
-              Call us:<br/>
-              <a class="contacts__phone" href="tel:+19125553333">
-                +1 (912) 555-33-33
-              </a>
-            </li>
-            <li class="contacts__item">
-              Write us:<br/>
-              <a class="contacts__email" href="mail:mail@company.com">
-                mail@company.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              Drive to us:<br/>
-              <a class="contacts__address" href="/">
-                Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
-              </a>
-            </li>
-          </ul>
+          <div class="container">
+            <b class="contacts__title">Do you have any questions? <br/> Contact us</b>
+            <ul class="contacts__text">
+              <li class="contacts__item">
+                Call us:<br/>
+                <a class="contacts__phone" href="tel:+19125553333">
+                  +1 (912) 555-33-33
+                </a>
+              </li>
+              <li class="contacts__item">
+                Write us:<br/>
+                <a class="contacts__email" href="mail:mail@company.com">
+                  mail@company.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                Drive to us:<br/>
+                <a class="contacts__address" href="/">
+                  Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
+                </a>
+              </li>
+            </ul>
+          </div>
           <img src="./img/contacts_map.jpg" alt="Map">
         </div>
       </div>
