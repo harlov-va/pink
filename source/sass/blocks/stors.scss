@@ -1,42 +1,67 @@
+@import "../utils/variables.scss";
+
 .stors {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 300;
+
+  background: url("../../img/intro_background_mobile.png")  no-repeat center;
+  background-size: 100% 100%;
+
+  .stors__photo-wrapper {
+    background: url("../../img/intro_iphone_in_hand_mobile.png")  no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .stors__photo {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .stors__download {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 281px;
+    height: 55px;
+    margin: 0 auto 32px;
 
-    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 50px;
+  }
 
-    .stors__photo {
-        display: block;
-        margin-bottom: 28px;
-    }
-   
-    .stors__download {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 281px;
-        height: 55px;
-        margin: 0 auto 32px;
-        
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        border: 3px solid white;
-        border-radius: 50px;
-    }
-
-    .stors__description {
-        text-align: center;
-        color: white;
-    }
+  .stors__description {
+    text-align: center;
+    color: white;
+  }
 }
 
 .stors__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 0 28px 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 28px 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .stors {
+    flex-direction: row;
+    background-image: url("../../img/intro_background_tablet.png");
+
+    .stors__photo-wrapper {
+      order: 1;
+      background-image: url("../../img/intro_iphone_in_hand_tablet.png");
+    }
+    .stors__photo {
+      background-image: url("../../img/intro_iphone_screen_tablet.png");
+    }
+  }
 }
