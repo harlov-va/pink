@@ -13,6 +13,11 @@
   }
 }
 
+.advantages__profits {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__intro,
 .advantages__slogan {
   font-size: 24px;
@@ -44,7 +49,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    text-align: left;
+  }
+
   .advantages__intro {
     margin-bottom: 0;
+  }
+
+  .advantages__profits {
+    justify-content: space-between;    
+    flex-direction: row;
+  }
+
+  .advantages__list {
+    width: 320px;
+    order: 1;
+    padding-left: 10px;
   }
 }
