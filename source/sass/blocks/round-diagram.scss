@@ -1,0 +1,24 @@
+@import '../utils/variables.scss';
+
+.round-diagram {
+    display: none;
+    .container {        
+        display: flex;
+        min-height: 440px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .facts {
+        width: 311px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .round-diagram {
+        display: initial;
+    }
+    .facts {
+        width: 580px;
+    }
+}

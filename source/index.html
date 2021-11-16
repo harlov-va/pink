@@ -76,7 +76,7 @@
         <div class="container">
           <p class="advantages__intro">Are you tired of the dullness of the megalopolis?</p>
           <p class="advantages__slogan">We have something<br/>to offer you!</p>
-          <div class="advantages__profits">
+          <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
                 <h3 class="advantages__title">Cheers up</h3>
@@ -91,9 +91,28 @@
                 <p class="advatages__description">Like, comment, share photos with friends and make new ones</p>
               </li>
             </ul>
-            <div class="advantages__images">
-              <img class="advantages__hello" src="./img/information-list_picture_smile.jpg" width="157" height="330" alt="Hello everybody"/>
+            <div class="advantages__images">              
+              <picture>    
+                <source media="(min-width: 660px)" srcset="img/information-list_picture_smile.jpg 1x, img/advantages_tablet_iphone.png 2x">
+                <img class="advantages__image" src="img/information-list_picture_smile.jpg" srcset="img/advantages_tablet_iphone.png 2x"
+                  alt="The picture is processed by PINK app">
+              </picture>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="round-diagram">
+        <div class="container">
+          <h2 class="round-diagram__title visually-hidden">These are some scientific facts</h2>
+          <img class="round-diagram__diagram" src="img/clock-icon.svg" alt="Diagram">
+          <div class="round-diagram__facts facts">
+            <h3 class="facts__title">There is an effect for 24 hours!</h3>
+            <p class="facts__text">
+              British scientists conducted research
+              and proved that the positive effect lasts 
+              whole day from using the application!</p>
+            <a class="facts__link" href="#" target="_blank">Learn more about the research</a>
           </div>
         </div>
       </section>
