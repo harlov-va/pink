@@ -1,3 +1,5 @@
+@import '../utils/variables.scss';
+
 .advantages {
   display: flex;
   flex-direction: column;
@@ -5,28 +7,28 @@
 
   text-align: center;
 
-  .advantages__intro,
-  .advantages__slogan {
-    font-size: 24px;
-  }
-
-  .advantages__intro {
-    margin: 46px 0 40px 0;
-  }
-
-  .advantages__slogan {
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-
-  .advantages__hello {
-    margin: 0 auto;
-  }
-
   .container {
     margin-bottom: -45px;
     z-index: -1;
   }
+}
+
+.advantages__intro,
+.advantages__slogan {
+  font-size: 24px;
+}
+
+.advantages__intro {
+  margin: 46px 0 40px 0;
+}
+
+.advantages__slogan {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.advantages__hello {
+  margin: 0 auto;
 }
 
 .advantages__list {
@@ -38,5 +40,11 @@
     font-size: 18px;
     font-weight: bold;
     color: black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__intro {
+    margin-bottom: 0;
   }
 }

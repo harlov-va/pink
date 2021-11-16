@@ -1,26 +1,28 @@
+@import '../utils/variables.scss';
+
 .page-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: -67px;
-
-  background-color: #283645;
+  margin-bottom: -66px;
 
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
 
-  .page-header__logo-container {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 69px;
-    padding: 0;
+    height: 66px;
+    background: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__logo-image {
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  .page-header__logo {
+    fill: white;
+  }
+
+  .page-header__logo-glasses {
+    margin-right: 12px;
   }
 
   .page-header__toggle {
@@ -29,8 +31,26 @@
   }
 }
 
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header__logo-glasses {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     margin-bottom: -110px
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__toggle {
+    display: none;
   }
 }

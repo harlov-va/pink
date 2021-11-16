@@ -9,29 +9,32 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <h2 class="page-header__title visually-hidden">Menu</h2>      
-        <div class="page-header__logo-container">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logotype_mobile.svg" width="75" height="22" alt="Pink">
-          </a>
-          <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
-        </div>
-      </div>      
-      <nav class="main-nav visually-hidden">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Main</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Photos</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Competition</a>
-            </li>
-          </ul>
-        </div>
-      </nav>      
+        <h2 class="page-header__title visually-hidden">Menu</h2>
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-glasses" width="59" height="40">
+            <use xlink:href="img/sprite.svg#glasses"></use>
+          </svg>
+          <svg class="page-header__logo-pink" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Main</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Photos</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Competition</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+      </div>
     </header>
 
     <main class="page-main">
@@ -71,14 +74,8 @@
 
       <section class="advantages">
         <div class="container">
-          <p class="advantages__intro">
-            Are you tired of the dullness<br/>
-            of the megalopolis?
-          </p>
-          <p class="advantages__slogan">
-            We have something<br/>
-            to offer you!
-          </p>
+          <p class="advantages__intro">Are you tired of the dullness of the megalopolis?</p>
+          <p class="advantages__slogan">We have something<br/>to offer you!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Cheers up</h3>

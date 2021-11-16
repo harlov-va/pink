@@ -1,23 +1,36 @@
+@import "../utils/variables.scss";
+
 .site-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .site-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 63px;  
+  height: 63px;
   padding: 0;
 
   border-bottom: 1px solid black;
 
-  text-transform: uppercase;
+
   a {
     color: white;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: none;
   }
 }
