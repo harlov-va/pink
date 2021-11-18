@@ -73,7 +73,10 @@
   }
   .reviews__control-quotes {
     width: 100%;
-    background-color: lightgrey;
+    img {
+      width: 79px;
+      height: 63px;
+    }
   }
 }
 
