@@ -91,7 +91,7 @@
                 <p class="advatages__description">Like, comment, share photos with friends and make new ones</p>
               </li>
             </ul>
-            <ul class="advantages__images">                            
+            <ul class="advantages__images">
               <li class="advantages__image-item1"></li>
               <li class="advantages__image-item2"></li>
               <li class="advantages__image-item3"></li>
@@ -108,7 +108,7 @@
             <h3 class="facts__title">There is an effect for 24 hours!</h3>
             <p class="facts__text">
               British scientists conducted research
-              and proved that the positive effect lasts 
+              and proved that the positive effect lasts
               whole day from using the application!</p>
             <a class="facts__link" href="#" target="_blank">Learn more about the research</a>
           </div>
@@ -117,32 +117,52 @@
 
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title visually-hidden">Our reviews</h2>
-          <div class="reviews__list  slider__list">
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">John Edwood</cite>
-              <p class="reviews__author-age">39 old, a welder</p>
-              <p class="reviews__text">This application's turned my world upside down and allowed me to take a fresh look at the usual gray things! And I've also met my future wife in the comments to the posted photo!</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item visually-hidden">
-              <cite class="reviews__author-name">Travis Smith</cite>
-              <p class="reviews__author-age">45, a musician</p>
-              <p class="reviews__text">The guys's done a great job as for me.</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item visually-hidden">
-              <cite class="reviews__author-name">Ivanka Trump</cite>
-              <p class="reviews__author-age">29, a model</p>
-              <p class="reviews__text">In the app, your photos will take on a new life</p>
-            </blockquote>
+        <h2 class="reviews__title visually-hidden">Our reviews</h2>
+        <div class="container">
+          <div class="reviews__control-quotes">
+            <svg width="22" height="41">
+              <use xlink:href="img/sprite.svg#quotes" fill="#283645"></use>
+            </svg>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="reviews__wrapper slider">
+            <button class="reviews__control-back" type="button" aria-label="back">
+              <svg width="22" height="41">
+                <use xlink:href="img/sprite.svg#arrow-back" fill="#283645"></use>
+              </svg>
+            </button>
+            <div class="reviews__list  slider__list">
+              <blockquote class="reviews__item  slider__item">
+                <cite class="reviews__author-name">John Edwood</cite>
+                <cite class="reviews__author-age">39 old, a welder</cite>
+                <p class="reviews__text">This application's turned my world upside down and allowed me to take a fresh
+                  look at the usual gray things! And I've also met my future wife in the comments to the posted
+                  photo!</p>
+              </blockquote>
+              <blockquote class="reviews__item  slider__item visually-hidden">
+                <cite class="reviews__author-name">Travis Smith</cite>
+                <cite class="reviews__author-age">45, a musician</cite>
+                <p class="reviews__text">The guys's done a great job as for me.</p>
+              </blockquote>
+              <blockquote class="reviews__item  slider__item visually-hidden">
+                <cite class="reviews__author-name">Ivanka Trump</cite>
+                <cite class="reviews__author-age">29, a model</cite>
+                <p class="reviews__text">In the app, your photos will take on a new life</p>
+              </blockquote>
+            </div>
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+            <button class="reviews__control-forward" type="button" aria-label="forward">
+              <svg width="22" height="41">
+                <use xlink:href="img/sprite.svg#arrow-forward" fill="#283645"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
+
       <section class="price">
         <div class="price__wrapper slider">
         <div class="price__list  slider__list">
@@ -264,21 +284,21 @@
           <div class="container">
             <b class="contacts__title">Do you have any questions? <br/> Contact us</b>
             <ul class="contacts__text">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__phone">
                 Call us:<br/>
-                <a class="contacts__phone" href="tel:+19125553333">
+                <a href="tel:+19125553333">
                   +1 (912) 555-33-33
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__email">
                 Write us:<br/>
-                <a class="contacts__email" href="mail:mail@company.com">
+                <a href="mail:mail@company.com">
                   mail@company.com
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__address">
                 Drive to us:<br/>
-                <a class="contacts__address" href="/">
+                <a href="/">
                   Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
                 </a>
               </li>

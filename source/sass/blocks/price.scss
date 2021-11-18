@@ -1,3 +1,5 @@
+@import "../utils/variables.scss";
+
 .price {
     display: flex;
     flex-direction: column;
@@ -58,4 +60,10 @@
     .price__field {
         width: 20%;
     }
+}
+
+@media (min-width: $tablet-width) {
+  .price__toggles {
+    display: none;
+  }
 }

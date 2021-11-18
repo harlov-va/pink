@@ -1,7 +1,12 @@
-.slider {
+@import "../utils/variables.scss";
 
-    .slider__toggles {
-        display: flex;
-        justify-content: center;
-    }
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
 }

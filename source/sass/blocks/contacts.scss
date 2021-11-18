@@ -1,13 +1,10 @@
+@import "../utils/variables.scss";
+
 .contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .contacts__text {
-        text-align: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+
     .contacts__title {
         margin-bottom: 33px;
         text-align: center;
@@ -20,14 +17,49 @@
         font-weight: bold;
     }
 
-    .contacts__item:last-child {
-        margin-bottom: 42px;
-    }
-
-    .contacts__phone, 
-    .contacts__email,
-    .contacts__address {
+    .contacts__item a {
         color: #d22856;
         font-weight: 300;
     }
+}
+
+.contacts__text {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__address {
+  margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contacts__phone,
+  .contacts__email {
+    width: 50%;
+  }
+  .contacts__address {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item {
+    width: initial;
+  }
+  .contacts__email {
+    width: 100%;
+    order: 2;
+  }
+  .contacts__address {
+    width: initial;
+    order: 1;
+    margin-bottom: 0;
+  }
 }
