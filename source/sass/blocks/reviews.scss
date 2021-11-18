@@ -1,7 +1,10 @@
+@import '../utils/variables.scss';
+
 .reviews {
     margin-bottom: 45px;
     color: #283645;
     line-height: 30px;
+    text-align: center;
     
     background-color: white;
 
@@ -12,11 +15,6 @@
         padding: 0;
     }
 
-    .reviews__author-name, 
-    .reviews__text {
-        text-align: center;
-    }
-
     .reviews__author-name {
         display: flex;
         justify-content: center;
@@ -24,6 +22,20 @@
         font-size: 18px;
         font-weight: bold;
         color: black;
+    }
+}
+
+.reviews__author-age {
+    display: none;
+}
+
+@media (min-width: $tablet-width)  {
+    .reviews {
+        
+    }
+
+    .reviews__author-age {
+        display: initial;
     }
 }
 
