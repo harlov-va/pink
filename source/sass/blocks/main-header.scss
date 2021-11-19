@@ -19,3 +19,17 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    min-height: 440px;
+    background-image: url("../../img/intro_background_tablet.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    min-height: 395px;
+    background-image: url("../../img/intro_background_desktop.png");
+  }
+}
