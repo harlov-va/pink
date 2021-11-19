@@ -302,36 +302,12 @@
               </li>
             </ul>
           </div>
-          <img src="./img/contacts_map.jpg" alt="Map">
+          <div class="page-footer__map"></div>
         </div>
       </div>
     </footer>
     <script>
-      function curry(func) {
-
-        return function curried(...args) {
-          if (!args.length) {
-            return func.apply(this, args);
-          } else {
-            return function(...args2) {
-              if (!args2.length) {
-                return func.apply(this, args);
-              } else {
-                return curried.apply(this, args.concat(args2));
-              }
-            }
-          }
-        };
-
-        }
-
-        function sum(...args) {
-          return args.reduce((acc, next) => acc + next);
-        }
-
-        let curriedSum = curry(sum);
-
-        // alert( curriedSum(1)(2)(3)(4)(5)() );
+     
     </script>
   </body>
 </html>

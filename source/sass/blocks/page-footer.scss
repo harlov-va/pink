@@ -1,3 +1,5 @@
+@import '../utils/variables.scss';
+
 .page-footer {
     padding-top: 47px;
 
@@ -10,5 +12,25 @@
     }
     .page-footer__copyright.copyright {
         margin-bottom: 40px;
+    }
+}
+
+.page-footer__map {    
+    width: $mobile-width-only;
+    height: 200px;
+    background: url("../../img/map.png") no-repeat center center;
+}
+
+@media (min-width: $tablet-width) {
+    .page-footer__map {
+        width: $tablet-width;
+        height: 375px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-footer__map {
+        width: $desktop-width;
+        height: 505px;
     }
 }
