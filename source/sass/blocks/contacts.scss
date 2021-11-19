@@ -1,9 +1,16 @@
 @import "../utils/variables.scss";
 
 .contacts {
+  padding-top: 47px;
+
+  font-size: 24px;
+  font-weight: 300;
+
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
     .contacts__title {
         margin-bottom: 33px;
@@ -34,6 +41,13 @@
   margin-bottom: 42px;
 }
 
+.contacts__map {
+  width: $mobile-width-only;
+  height: 200px;
+  margin: 0 auto;
+  background: url("../../img/map.png") no-repeat center center;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__text {
     display: flex;
@@ -46,6 +60,10 @@
   }
   .contacts__address {
     width: 100%;
+  }
+  .contacts__map {
+    width: $tablet-width;
+    height: 375px;
   }
 }
 
@@ -61,5 +79,9 @@
     width: initial;
     order: 1;
     margin-bottom: 0;
+  }
+  .contacts__map {
+    width: $desktop-width;
+    height: 505px;
   }
 }

@@ -120,7 +120,7 @@
         <h2 class="reviews__title visually-hidden">Our reviews</h2>
         <div class="container">
           <div class="reviews__control-quotes">
-            <img width="22" height="41" src="img/reviews-desktop-quotes.png"> 
+            <img width="22" height="41" src="img/reviews-desktop-quotes.png">
           </div>
           <div class="reviews__wrapper slider">
             <button class="reviews__control-back" type="button" aria-label="back">
@@ -274,40 +274,73 @@
         </p>
       </div>
       </section>
+
+      <section class="contacts">
+        <div class="container">
+          <b class="contacts__title">Do you have any questions? <br/> Contact us</b>
+          <ul class="contacts__text">
+            <li class="contacts__item contacts__phone">
+              Call us:<br/>
+              <a href="tel:+19125553333">
+                +1 (912) 555-33-33
+              </a>
+            </li>
+            <li class="contacts__item contacts__email">
+              Write us:<br/>
+              <a href="mail:mail@company.com">
+                mail@company.com
+              </a>
+            </li>
+            <li class="contacts__item contacts__address">
+              Drive to us:<br/>
+              <a href="/">
+                Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
+
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <div class="container">
-            <b class="contacts__title">Do you have any questions? <br/> Contact us</b>
-            <ul class="contacts__text">
-              <li class="contacts__item contacts__phone">
-                Call us:<br/>
-                <a href="tel:+19125553333">
-                  +1 (912) 555-33-33
-                </a>
-              </li>
-              <li class="contacts__item contacts__email">
-                Write us:<br/>
-                <a href="mail:mail@company.com">
-                  mail@company.com
-                </a>
-              </li>
-              <li class="contacts__item contacts__address">
-                Drive to us:<br/>
-                <a href="/">
-                  Madrid, Sevilla la Nueva, <br/> Avda. de la Estación 116
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__map"></div>
-        </div>
+    <footer class="footer container">
+      <div class="footer__logo">
+        <a class="footer__logo-link">
+          <svg class="footer__logo-glasses" width="59" height="40">
+            <use xlink:href="img/sprite.svg#glasses"></use>
+          </svg>
+          <svg class="footer__logo-pink" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__socials socials">
+        <b class="social__title visually-hidden">We are in social media</b>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#"
+               aria-label="Go to the app page on Twitter"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#"
+               aria-label="Go to the app page on Facebook"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#"
+               aria-label="Go to the app page on Youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Made by:
+          <svg class="footer__copyright-image" width="105" height="41">
+            <use xlink:href="img/sprite.svg#starsky-hutch"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script>
-     
-    </script>
+    <script src="js/lodash.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
