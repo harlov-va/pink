@@ -8,155 +8,174 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <h2 class="page-header__title visually-hidden">Menu</h2>
-      <div class="page-header__logo-container">
+      <div class="container">
+        <h2 class="page-header__title visually-hidden">Menu</h2>
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logotype_mobile.svg" width="75" height="22" alt="Pink">
+          <svg class="page-header__logo-glasses" width="59" height="40">
+            <use xlink:href="img/sprite.svg#glasses"></use>
+          </svg>
+          <svg class="page-header__logo-pink" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
         </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Main</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Photos</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Competition</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Main</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Photos</a>
-            </li>
-            <li class="site-list__item  site-list__item--active">
-              <a>Competition</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
     <main>
       <div class="main-header">
-        <h1 class="main-header__title">It's the competition of <br>the craziest<br> trip with Pink</h1>
+        <h1 class="main-header__title">It's the competition of <br>the craziest trip with Pink</h1>
       </div>
       <section class="main-form">
         <h2 class="main-form__title visually-hidden">It is a form for participation in a competition</h2>
-        <p class="main-form__intro">You will share your story and take<br> the chance of valuable prizes - it is 1000<br> miles on your bonus card</p>
-        <form class="form"  method="GET" action="https://echo.htmlacademy.ru" target="_blank">
-          <fieldset class="name-data">
-            <h3 class="name-data__title visually-hidden">Personal data</h3>
-            <ul class="name-data__list">
-              <li class="name-data__item">
-                <label for="lastname">Last name:</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Write the last name *" required>
-              </li>
-              <li class="name-data__item">
-                <label for="firstname">First name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Write the first name *" required>
-              </li>
-              <li class="name-data__item">
-                <label for="middlename">Middle name:</label>
-                <input type="text" name="middlename" id="middlename" placeholder="Write the middle name">
-              </li>
-            </ul>
-          </fieldset>
+        <div class="container">
+          <p class="main-form__intro">
+            You will share your story and take 
+            the chance of valuable prizes - 
+            it is 1000 miles on your bonus card.
+            <span class="main-form__intro-fill-form">Please, fill in the form</span>
+          </p>
+          <form class="form"  method="GET" action="https://echo.htmlacademy.ru" target="_blank">
+            <fieldset class="name-data">
+              <h3 class="name-data__title visually-hidden">Personal data</h3>
+              <ul class="name-data__list">
+                <li class="name-data__item">
+                  <label for="lastname">Last name:</label>
+                  <input type="text" name="lastname" id="lastname" placeholder="Write the last name *" required>
+                </li>
+                <li class="name-data__item">
+                  <label for="firstname">First name:</label>
+                  <input type="text" name="firstname" id="firstname" placeholder="Write the first name *" required>
+                </li>
+                <li class="name-data__item">
+                  <label for="middlename">Middle name:</label>
+                  <input type="text" name="middlename" id="middlename" placeholder="Write the middle name">
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="achivements">
-            <h3 class="achivements__title">There are crazy achivements in the trip</h3>
-            <ul class="achivements__list">
-              <li class="achivements__item achivements__item--checked">
-                <label class="achivements__label" for="selfie">Taken a selfie with a shark</label>
-                <input class="achivements__checkbox visually-hidden" name="selfie" type="checkbox" id="selfie" checked>
-              </li>
-              <li class="achivements__item achivements__item--checked">
-                <label class="achivements__label" for="beach">Burnt your skin on a beach</label>
-                <input class="achivements__checkbox visually-hidden" name="beach" type="checkbox" id="beach" checked>
-              </li>
-              <li class="achivements__item">
-                <label class="achivements__label" for="chack">Seen Chack Norris</label>
-                <input class="achivements__checkbox visually-hidden" name="chack" type="checkbox" id="chack" >
-              </li>
-              <li class="achivements__item">
-                <label class="achivements__label" for="souvenirs">Bought souvenirs</label>
-                <input class="achivements__checkbox visually-hidden" name="souvenirs" name="middlename" type="checkbox" id="souvenirs" >
-              </li>
-              <li class="achivements__item achivements__item--checked">
-                <label class="achivements__label" for="tower">Held a tower</label>
-                <input class="achivements__checkbox visually-hidden" name="tower" type="checkbox" id="tower" checked>
-              </li>
-              <li class="achivements__item">
-                <label class="achivements__label" for="hotel">Damaged a hotel</label>
-                <input class="achivements__checkbox visually-hidden" name="hotel" type="checkbox" id="hotel" >
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="user-contacts">
-            <h3 class="user-contacts__title visually-hidden">Contacts</h3>
-            <ul class="user-contacts__list">
-              <li class="user-contacts__item">
-                <label for="phone">Phone number</label>
-                <input type="tel" name="phone" id="phone" placeholder="Your phone number">
-              </li>
-              <li class="user-contacts__item">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="apps">
-            <h3 class="apps__title">Which app did you travel with?</h3>
-            <ul class="apps__list">
-              <li class="apps__item">
-                <div class="apps__radio-button apps__radio-button--active"></div>
-                <label class="apps__label" for="ios">Pink for iOS</label>
-                <input class="apps__radio visually-hidden" name="ios" type="radio" id="ios">
-              </li>
-              <li class="apps__item">
-                <div class="apps__radio-button"></div>
-                <label class="apps__label" for="android">Pink for Android</label>
-                <input class="apps__radio visually-hidden" name="android" type="radio" id="android">
-              </li>
-              <li class="apps__item">
-                <div class="apps__radio-button"></div>
-                <label class="apps__label" for="windows">Pink for Windows Phone</label>
-                <input class="apps__radio visually-hidden" name="windows" type="radio" id="windows">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="comments">
-            <h3 class="comments__title">Describe your emotions</h3>
-            <textarea class="comments__description" name="comments-description" id="comments-description" rows="5" cols="25%" placeholder="You will write emotionally and will not be shy"></textarea>
-          </fieldset>
-          <div class="main-form__footer">
-            <button class="main-form__button button" type="submit">Send</button>
-            <p class="main-form__footnote"><span class="main-form__star">&ast;</span> &ndash; required field</p>
-          </div>
-        </form>
+            <fieldset class="achivements">
+              <h3 class="achivements__title">There are crazy achivements in the trip</h3>
+              <ul class="achivements__list">
+                <li class="achivements__item achivements__item--checked">
+                  <label class="achivements__label" for="selfie">Taken a selfie with a shark</label>
+                  <input class="achivements__checkbox visually-hidden" name="selfie" type="checkbox" id="selfie" checked>
+                </li>
+                <li class="achivements__item achivements__item--checked">
+                  <label class="achivements__label" for="beach">Burnt your skin on a beach</label>
+                  <input class="achivements__checkbox visually-hidden" name="beach" type="checkbox" id="beach" checked>
+                </li>
+                <li class="achivements__item">
+                  <label class="achivements__label" for="chack">Seen Chack Norris</label>
+                  <input class="achivements__checkbox visually-hidden" name="chack" type="checkbox" id="chack" >
+                </li>
+                <li class="achivements__item">
+                  <label class="achivements__label" for="souvenirs">Bought souvenirs</label>
+                  <input class="achivements__checkbox visually-hidden" name="souvenirs" name="middlename" type="checkbox" id="souvenirs" >
+                </li>
+                <li class="achivements__item achivements__item--checked">
+                  <label class="achivements__label" for="tower">Held a tower</label>
+                  <input class="achivements__checkbox visually-hidden" name="tower" type="checkbox" id="tower" checked>
+                </li>
+                <li class="achivements__item">
+                  <label class="achivements__label" for="hotel">Damaged a hotel</label>
+                  <input class="achivements__checkbox visually-hidden" name="hotel" type="checkbox" id="hotel" >
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="user-contacts">
+              <h3 class="user-contacts__title visually-hidden">Contacts</h3>
+              <ul class="user-contacts__list">
+                <li class="user-contacts__item">
+                  <label for="phone">Phone number</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Your phone number">
+                </li>
+                <li class="user-contacts__item">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Your email">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="apps">
+              <h3 class="apps__title">Which app did you travel with?</h3>
+              <ul class="apps__list">
+                <li class="apps__item">
+                  <div class="apps__radio-button apps__radio-button--active"></div>
+                  <label class="apps__label" for="ios">Pink for iOS</label>
+                  <input class="apps__radio visually-hidden" name="ios" type="radio" id="ios">
+                </li>
+                <li class="apps__item">
+                  <div class="apps__radio-button"></div>
+                  <label class="apps__label" for="android">Pink for Android</label>
+                  <input class="apps__radio visually-hidden" name="android" type="radio" id="android">
+                </li>
+                <li class="apps__item">
+                  <div class="apps__radio-button"></div>
+                  <label class="apps__label" for="windows">Pink for Windows Phone</label>
+                  <input class="apps__radio visually-hidden" name="windows" type="radio" id="windows">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="comments">
+              <h3 class="comments__title">Describe your emotions</h3>
+              <textarea class="comments__description" name="comments-description" id="comments-description" rows="5" cols="25%" placeholder="You will write emotionally and will not be shy"></textarea>
+            </fieldset>
+            <div class="main-form__footer">
+              <button class="main-form__button button" type="submit">Send</button>
+              <p class="main-form__footnote"><span class="main-form__star">&ast;</span> &ndash; required field</p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <img src="./img/logotype_footer.svg">
-        <div class="page-footer__social social">
-          <b class="social__title visually-hidden">We are in social media</b>
-          <ul class="social__text">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="/">
-                <img src="img/twitter_icon.svg" width="48" height="48" alt="Twitter">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="/">
-                <img src="img/facebook_icon.svg" width="48" height="48" alt="Facebook">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="/">
-                <img src="img/youtube_icon.svg" width="48" height="48" alt="Youtube">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Made by:</b>
-          <a class="copyright__link" href="/"><img src="./img/Starsky-and-hutch-movie-logo.png" alt="Starsky and Hutch"></a>
-        </div>
+    <footer class="footer container">
+      <div class="footer__logo">
+        <a class="footer__logo-link">
+          <svg class="footer__logo-glasses" width="59" height="40">
+            <use xlink:href="img/sprite.svg#glasses"></use>
+          </svg>
+          <svg class="footer__logo-pink" width="74" height="23">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__socials socials">
+        <b class="social__title visually-hidden">We are in social media</b>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="#"
+               aria-label="Go to the app page on Twitter"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--facebook" href="#"
+               aria-label="Go to the app page on Facebook"></a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#"
+               aria-label="Go to the app page on Youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Made by:
+          <svg class="footer__copyright-image" width="105" height="41">
+            <use xlink:href="img/sprite.svg#starsky-hutch"></use>
+          </svg>
+        </a>
       </div>
     </footer>
 

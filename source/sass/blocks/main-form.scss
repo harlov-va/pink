@@ -1,14 +1,6 @@
 .main-form {
     padding-top: 54px;
 
-    .main-form__intro {
-        margin-bottom: 47px;
-        margin-top: 0;
-
-        line-height: 30px;
-        text-align: center;
-    }
-
     fieldset {
         border: none;
         font-size: 18px;
@@ -49,18 +41,17 @@
     padding: 0;
 
     .name-data__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        @include reset();
     }
 }
 
 .name-data__item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 27px;
     line-height: 30px;
 
-    label {
-        display: block;
+    label {        
         margin-left: 23px;
         margin-bottom: 15px;
         color: #d22856;
@@ -72,4 +63,47 @@
         font-size: 18px;
         border: 2px solid #e5e5e5;
     }
+}
+
+.main-form__intro {
+  margin-bottom: 47px;
+  margin-top: 0;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-form__intro-fill-form {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    padding-top: 100px;
+  }
+
+  .main-form__intro {
+    margin-bottom: 75px;
+  }
+
+  .main-form__intro-fill-form {
+    display: initial;
+  }
+
+  .name-data__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label {
+      width: 22%;
+      margin-bottom: 0;
+    }
+    input {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
