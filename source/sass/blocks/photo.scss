@@ -43,9 +43,9 @@
   margin: 0;
 }
 
-
 .photo-post__comment {
-  margin-bottom: 17px;
+  display: inline-block;
+  height: 35px;
 }
 
 .photo-post__picture {
@@ -84,7 +84,7 @@
   }
 
   .photo-post__comment {
-    margin-bottom: 50px;
+    height: 62px;
   }
 
   .photo-post--panarama {
@@ -117,10 +117,6 @@
     img {
       left: -130px
     }
-  }
-
-  .photo-post__comment {
-    margin-bottom: 50px;
   }
 
   .photo-post:not(.photo-post--panarama) {

@@ -7,16 +7,10 @@
 
 .upload__form {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 20px 0 40px;
-  background-color: #f2f2f2;
-
-  .upload__picture {
-    // width: 100%;
-    height: 100%;
-    margin: 0 20px 44px;
-
-  }
+  padding: 20px 20px 40px;
+  background-color: $bg-grey-lighter;
 
   & fieldset {
     margin: 0;
@@ -25,8 +19,7 @@
   }
 
   .tools__list {
-    margin: 0;
-    list-style: none;
+    @include reset();
   }
 }
 
@@ -39,6 +32,11 @@
   .upload__buttons:first-child {
     margin-bottom: 12px;
   }
+}
+
+.upload__picture {
+  height: 100%;
+  margin-bottom: 44px;
 }
 
 .upload__options.tools {
@@ -55,18 +53,34 @@
   .upload__form {
     flex-direction: row;
     justify-content: space-between;
-    padding: 54px 0 54px;
+    padding: 54px 20px 54px;
+  }
+
+  .upload__toolbar {
+    width: 300px;
   }
   .upload__slogan {
     margin: 0 0 73px 0;
+  }
+  .upload__picture {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .upload__form {
-    padding: 57px 0 57px;
+    padding: 57px 130px 57px;
+    background-color: $bg-grey-lighter;
   }
   .upload__slogan {
     margin: 0 0 70px 0;
+  }
+  .upload__buttons-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+      
+    .upload__buttons:first-child {
+      margin-bottom: 0;
+    }    
   }
 }
