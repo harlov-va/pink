@@ -30,7 +30,7 @@
   }
 }
 
-.upload__buttons-wrapper {  
+.upload__buttons-wrapper {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
@@ -43,4 +43,30 @@
 
 .upload__options.tools {
   padding: 0;
+}
+
+.upload__slogan {
+  display: block;
+  margin-bottom: 50px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .upload__form {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 54px 0 54px;
+  }
+  .upload__slogan {
+    margin: 0 0 73px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__form {
+    padding: 57px 0 57px;
+  }
+  .upload__slogan {
+    margin: 0 0 70px 0;
+  }
 }
