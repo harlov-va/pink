@@ -1,61 +1,87 @@
 .apps {
-    padding: 41px 0 44px;
-    background-color: #f2f2f2;
+  margin: 41px 0 44px;
+  background-color: #f2f2f2;
+  border: none;
 
-    .apps__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+  .apps__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .apps__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .apps__radio-button {
+    width: 35px;
+    height: 35px;
+    margin-right: 34px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+  }
+
+  .apps__radio-button.apps__radio-button--active {
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #d22856;
     }
+  }
 
-    .apps__item {
-        display: flex;
-        align-items: center;        
-        margin-bottom: 40px;
-    }
+  .apps__label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
 
-    .apps__title {
-        margin-bottom: 40px;
-        font-size: 14px;
-        color: #d22856;
-        text-align: center;
-        text-transform: uppercase;
-    }
+.apps__legend {
+  display: none;
+  margin: 0 auto;
 
-    .apps__radio-button {
-        width: 35px;
-        height: 35px;
-        margin-right: 34px;
+  font-size: 14px;
+  color: $color-accent;
+  text-transform: uppercase;
+}
 
-        background-color: white;
-        border-radius: 50%;
-        border: 2px solid #e5e5e5;
-    }
-
-    .apps__radio-button.apps__radio-button--active {
-        &::before {
-            content: "";
-            position: relative;
-            display: block;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background-color: #d22856;
-        }
-    }
-
-    .apps__label {
-        font-size: 18px;
-        line-height: 18px;        
-    }
-
+.apps__title {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: $color-accent;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
-    .apps {
-        order: 2;
-    }
+  .apps {
+    order: 2;
+    margin: 41px 20px 44px;
+    background: none;
+    border: 2px solid $bg-grey;
+  }
+  .apps__legend {
+    display: initial;
+  }
+  .apps__title {
+    display: none;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .apps {
+    width: 48%;
+    margin: 0 0 44px;
+  }
+}
+
