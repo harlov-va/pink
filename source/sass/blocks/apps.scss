@@ -53,3 +53,9 @@
     }
 
 }
+
+@media (min-width: $tablet-width) {
+    .apps {
+        order: 2;
+    }
+}

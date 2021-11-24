@@ -23,3 +23,9 @@
         resize: none;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .comments {
+      order: 5;
+    }
+}
