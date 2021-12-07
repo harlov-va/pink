@@ -44,7 +44,14 @@
         <div class="container">
           <div class="intro__app-stors stors">
             <div class="stors__photo-wrapper">
-              <div class="stors__photo"></div>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/stors-image-desktop.png 1x, img/stors-image-desktop@2x.png 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/stors-image-tablet.png 1x, img/stors-image-tablet@2x.png 2x">
+                <img class="stors__image" src="img/stors-image-mobile.png" srcset="img/stors-image-mobile@2x.png 2x"
+                  alt="It's the cell phone with the installed app">
+              </picture>
             </div>
             <div class="stors__buttons-wrapper">
               <h2 class="stors__title">Look at life in another way</h2>
