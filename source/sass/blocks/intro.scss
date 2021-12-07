@@ -1,17 +1,20 @@
 .intro {
-    background-color: $bg-darkblue;
-    background: url("../../img/intro_background_mobile.png")  no-repeat top left;
-    background-size: 100% 100%;
+  background-color: $bg-darkblue;
+  background-image: url("../../img/intro_background_mobile.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px 462px;
 }
 
 @media (min-width: $tablet-width) {
-    .intro {
-        background-image: url("../../img/intro_background_tablet.png");
-    }
+  .intro {
+    background-image: url("../../img/intro_background_tablet.png");
+    background-size: initial;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .intro {
-        background-image: url("../../img/intro_background_desktop.png");
-    }
+  .intro {
+    background-image: url("../../img/intro_background_desktop.png");
+  }
 }
