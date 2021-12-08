@@ -1,3 +1,82 @@
 .main-nav {
+    position: relative;
+    width: 320px;
+    min-height: 66px;
+    margin: 0 auto;
 
+    background-color: $color-main;
+}
+
+.main-nav__list {
+    @include reset();
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    display: block;
+    width: 70px;
+    height: 66px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 25px;
+        left: 17px;
+
+        width: 36px;
+        height: 2px;
+        background-color: white;
+        box-shadow: 0 8px 0 0 white, 0 16px 0 0 white;
+    }
+    &:hover::before {
+        background-color: $color-accent; 
+        box-shadow: 0 8px 0 0 $color-accent, 0 16px 0 0 $color-accent;
+    }
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: 0;
+
+    &::before,
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 32px;
+        left: 18px;
+        width: 36px;
+        height: 2px;
+        background-color: white;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+    &:hover::before,
+    &:hover::after {
+        background-color: $color-accent;         
+    }
+    &:active::before,
+    &:active::after {
+        opacity: 0.3;
+    }
 }

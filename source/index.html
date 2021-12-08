@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -18,7 +18,8 @@
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -32,8 +33,7 @@
               </li>
             </ul>
           </div>
-        </nav>
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+        </nav>        
       </div>
     </header>
 
@@ -41,10 +41,15 @@
       <h1 class="visually-hidden">Photographs of users</h1>
 
       <section class="intro">
-        <div class="container">
+        <div class="intro__wrapper">
           <div class="intro__app-stors stors">
-            <div class="stors__photo-wrapper">
+            <div class="stors__image-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/stors-image-desktop.webp 1x, img/stors-image-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/stors-image-tablet.webp 1x, img/stors-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/stors-image-mobile.webp 1x, img/stors-image-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/stors-image-desktop.png 1x, img/stors-image-desktop@2x.png 2x">
                 <source media="(min-width: 660px)"
@@ -348,6 +353,6 @@
       </div>
     </footer>
     <script src="js/lodash.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/nav.min.js"></script>
   </body>
 </html>

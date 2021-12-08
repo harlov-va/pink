@@ -1,20 +1,25 @@
 .intro {
-  background-color: $bg-darkblue;
-  background-image: url("../../img/intro_background_mobile.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 320px 462px;
+
 }
 
 @media (min-width: $tablet-width) {
-  .intro {
+  .intro { 
+    padding-top: 184px;
+    background-color: $bg-darkblue;    
+    background-repeat: no-repeat;
+    background-position: top center;
     background-image: url("../../img/intro_background_tablet.png");
     background-size: initial;
+  }
+
+  .intro__wrapper {
+    position: relative;    
   }
 }
 
 @media (min-width: $desktop-width) {
-  .intro {
+  .intro {    
+    padding-top: 220px;
     background-image: url("../../img/intro_background_desktop.png");
   }
 }
