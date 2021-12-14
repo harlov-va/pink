@@ -1,23 +1,30 @@
 .site-list {
   @include reset();
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   text-transform: uppercase;
 }
 
 .site-list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 63px;
-  padding: 0;
-
-  border-bottom: 1px solid black;
-
-
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
     color: white;
     text-decoration: none;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid black;
+  }
+}
+
+.site-list__item a[href] {
+  &:hover {
+    color: $color-accent;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 
