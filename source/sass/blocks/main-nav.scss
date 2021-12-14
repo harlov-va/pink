@@ -2,13 +2,12 @@
     position: relative;
     width: 320px;
     min-height: 66px;
-    margin: 0 auto;
-
-    background-color: $color-main;
+    margin: 0 auto;   
 }
 
 .main-nav__list {
     @include reset();
+    background-color: $color-main;
 }
 
 .main-nav__toggle {
@@ -27,56 +26,61 @@
     border: none;
 }
 
-.main-nav--closed .main-nav__toggle {
-    &::before {
-        content: "";
-
-        position: absolute;
-        top: 25px;
-        left: 17px;
-
-        width: 36px;
-        height: 2px;
-        background-color: white;
-        box-shadow: 0 8px 0 0 white, 0 16px 0 0 white;
+@media (max-width: $desktop-width) {
+    .main-nav--closed .main-nav__list {
+        display: none;
     }
-    &:hover::before {
-        background-color: $color-accent; 
-        box-shadow: 0 8px 0 0 $color-accent, 0 16px 0 0 $color-accent;
-    }
-    &:active::before {
-        opacity: 0.3;
-    }
-}
+    .main-nav--closed .main-nav__toggle {
+        &::before {
+            content: "";
 
-.main-nav--opened .main-nav__toggle {
-    top: 0;
-    right: 0;
+            position: absolute;
+            top: 25px;
+            left: 17px;
 
-    &::before,
-    &::after {
-        content: "";
-
-        position: absolute;
-        top: 32px;
-        left: 18px;
-        width: 36px;
-        height: 2px;
-        background-color: white;
+            width: 36px;
+            height: 2px;
+            background-color: white;
+            box-shadow: 0 8px 0 0 white, 0 16px 0 0 white;
+        }
+        &:hover::before {
+            background-color: $color-accent; 
+            box-shadow: 0 8px 0 0 $color-accent, 0 16px 0 0 $color-accent;
+        }
+        &:active::before {
+            opacity: 0.3;
+        }
     }
 
-    &::before {
-        transform: rotate(45deg);
-    }
-    &::after {
-        transform: rotate(-45deg);
-    }
-    &:hover::before,
-    &:hover::after {
-        background-color: $color-accent;         
-    }
-    &:active::before,
-    &:active::after {
-        opacity: 0.3;
+    .main-nav--opened .main-nav__toggle {
+        top: 0;
+        right: 0;
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 32px;
+            left: 18px;
+            width: 36px;
+            height: 2px;
+            background-color: white;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &:hover::before,
+        &:hover::after {
+            background-color: $color-accent;         
+        }
+        &:active::before,
+        &:active::after {
+            opacity: 0.3;
+        }
     }
 }

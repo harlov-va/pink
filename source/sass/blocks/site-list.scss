@@ -1,8 +1,7 @@
 .site-list {
   @include reset();
   display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
+  flex-direction: column;  
 }
 
 .site-list__item {
@@ -13,6 +12,7 @@
     height: 63px;
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid black;
