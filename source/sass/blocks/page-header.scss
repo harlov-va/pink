@@ -12,12 +12,10 @@
   font-weight: bold;
   z-index: 2;
 
-  &.page-header--nav-opened {
-    background-color: $color-main;
-  }
+  background-color: rgba(0, 0, 0, 0.3);
 
-  &.page-header--nav-closed {    
-    background-color: rgba(0, 0, 0, 0.3);
+  &.page-header--nav-closed {
+    background-color: $color-main;
   }
 
   .page-header__logo-glasses {
@@ -33,8 +31,13 @@
 .page-header__logo {
   margin-left: 20px;
   fill: white;
+  &:hover {  
+    fill: $color-accent;
+  }
+  &:active {  
+    opacity: 0.3;
+  }  
 }
-
 
 @media (max-width: $mobile-width-only) {
   .page-header__logo {
@@ -51,6 +54,13 @@
   .page-header {
     min-height: 110px;
     margin-bottom: -110px
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .page-header--nojs.page-header {
+    position: static;
+    flex-direction: column;
   }
 }
 

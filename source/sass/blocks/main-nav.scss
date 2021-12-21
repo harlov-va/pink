@@ -102,4 +102,17 @@
             opacity: 0.3;
         }
     }
+    .page-header--nojs {
+        & .main-nav {
+            position: static;
+        }
+
+        & .main-nav__list {
+            display: block;
+        }
+
+        & .main-nav__toggle {
+            display: none;
+        }
+    }
 }
