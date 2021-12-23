@@ -102,6 +102,9 @@
             opacity: 0.3;
         }
     }
+}
+
+@media (max-width: $mobile-width-only) {
     .page-header--nojs {
         & .main-nav {
             position: static;

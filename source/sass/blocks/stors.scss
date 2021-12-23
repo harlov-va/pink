@@ -30,8 +30,19 @@
     font-weight: bold;
     color: white;
     text-decoration: none;
+
     border: 3px solid white;
     border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-accent;
+      background-color: white;
+    }
+    &:active {
+      color: rgba($color: $color-accent, $alpha: .3);
+      background-color: white;
+    }
   }
 
   .stors__description {
@@ -50,12 +61,11 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
+
+  & picture {
+    display: flex;
+  }
 }
-
-// .stors__image {
-//   display: block;
-// }
-
 .stors__list {
   display: flex;
   justify-content: space-around;
@@ -80,6 +90,10 @@
       display: block;
       text-align: center;
     }
+    .stors__description {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   .stors__image-wrapper {
@@ -99,6 +113,13 @@
 @media (min-width: $desktop-width) {
   .stors {
     padding: 0 130px 112px;
+
+    .stors__title {
+      font-size: 50px;
+    }
+    .stors__download {
+      font-size: 21px;
+    }
   }
   .stors__image {
     height: 577px;

@@ -12,10 +12,10 @@
   font-weight: bold;
   z-index: 2;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-main;  
 
   &.page-header--nav-closed {
-    background-color: $color-main;
+    background-color: rgba(0, 0, 0, 0.3);  
   }
 
   .page-header__logo-glasses {
@@ -57,14 +57,27 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $mobile-width-only) {
   .page-header--nojs.page-header {
-    position: static;
-    flex-direction: column;
+    position: static;    
+    display: block;
+    margin-bottom: 0;
+
+    background-color: $color-main;
+
+    & .page-header__logo {
+      display: flex;
+      align-items: center;
+      min-height: 66px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .page-header__logo {
     margin-left: 130px;
   }

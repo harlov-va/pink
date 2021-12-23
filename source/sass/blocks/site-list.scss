@@ -38,6 +38,10 @@
   }
   .site-list__item a {
     border: none;
+
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
   }
 
   .site-list__item--active a {
