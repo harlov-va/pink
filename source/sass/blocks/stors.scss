@@ -1,10 +1,11 @@
 .stors {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   font-weight: 300;
 
   .stors__buttons-wrapper {
-    padding: 28px 20px 0;
+    padding: 28px 20px 35px;
+    text-align: center;
     background-color: $bg-darkblue;
     z-index: 1;
   }
@@ -46,6 +47,7 @@
   }
 
   .stors__description {
+    margin: 0;
     text-align: center;
     color: white;
   }
@@ -82,13 +84,23 @@
     padding-bottom: 112px;
 
     .stors__buttons-wrapper {
-      width: 300px;
-      padding-top: 0 ;
+      width: 340px;
+      padding-top: 0;
+      padding-bottom: 0;
       background-color: transparent;
     }
     .stors__title {
       display: block;
       text-align: center;
+      margin: 29px 0 39px 0;
+    }
+    .stors__download {
+      width: 300px;
+      height: 55px;
+      margin-bottom: 46px;
+    }
+    .stors__list {
+      margin-bottom: 44px;
     }
     .stors__description {
       font-size: 18px;
@@ -97,7 +109,7 @@
   }
 
   .stors__image-wrapper {
-    order: 2;    
+    order: 2;
 
     background-image: none;
     background-color: transparent;
