@@ -1,6 +1,7 @@
 .reviews {
   margin-bottom: 45px;
   color: #283645;
+  font-style: normal;
   line-height: 30px;
   text-align: center;
 
@@ -12,6 +13,7 @@
 
     font-size: 18px;
     font-weight: bold;
+    font-style: inherit;
     color: black;
   }
 }
@@ -21,11 +23,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0;
 }
 
 .reviews__author-age {
   display: none;
+  font-style: inherit;
+}
+
+.reviews__control-back,
+.reviews__control-forward {
+  width: 22px;
+  height: 41px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  use {
+    fill: rgba(40, 54, 69, 0.3); 
+  } 
+  &:hover use {
+    fill: rgba(40, 54, 69, 0.6);  
+  }
+  &:active use {
+    fill: rgba(40, 54, 69, 0.1);  
+  }
+}
+
+.reviews__control-back use,
+.reviews__control-forward use {
+  fill: rgba(40, 54, 69, 0.3);  
+  &:hover {
+    fill: rgba(40, 54, 69, 0.6);  
+  }
+  &:active {
+    fill: rgba(40, 54, 69, 0.1);  
+  }
 }
 
 .reviews__control-quotes,

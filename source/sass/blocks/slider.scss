@@ -1,8 +1,35 @@
-@import "../utils/variables.scss";
-
 .slider__toggles {
   display: flex;
-  justify-content: center;
+  width: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__toggle {
+  box-sizing: content-box;
+  display: block;
+  width: 6px;
+  height: 6px;  
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  border-radius: 50%;
+  border: 0;
+  background-color: $color-main;
+  opacity: 0.3;
+  &:hover:not(.slider__toggle--active) {
+    opacity: 0.6;
+  }
+  &:active:not(.slider__toggle--active) {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle--active {
+  border: 3px solid $color-main;
+  background-color: white;
+  opacity: 1;
 }
 
 @media (min-width: $desktop-width) {
