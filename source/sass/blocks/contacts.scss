@@ -12,29 +12,34 @@
     align-items: center;
   }
 
-    .contacts__title {
-        margin-bottom: 33px;
-        text-align: center;
-        font-weight: inherit;
-    }
+  .contacts__title {
+    margin-bottom: 44px;
+    text-align: center;
+    font-weight: inherit;
+  }
 
-    .contacts__item {
-        margin-bottom: 30px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+  .contacts__item {
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-    .contacts__item a {
-        color: #d22856;
-        font-weight: 300;
-    }
+  .contacts__item a {
+    color: #d22856;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .contacts__item a:hover {
+    color: $color-main;
+    text-decoration: underline;
+  }
+  .contacts__item a:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__text {
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
+  @include reset();
 }
 
 .contacts__address {
@@ -42,17 +47,58 @@
 }
 
 .contacts__map {
-  width: $mobile-width-only;
   height: 200px;
   margin: 0 auto;
   background: url("../../img/map.png") no-repeat center center;
 }
+
+.contacts__map-wrapper {
+  position: relative;
+}
+
+.contacts__map-wrapper::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  z-index: 4;
+  top: -3px;
+  right: 0;
+  background-image: url("../../img/triangle_decor.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+//@media (min-width: 1200px) {
+//  .contacts__map-wrapper--nojs {
+//    height: 500px;
+//    background-image: url("../../img/map-desktop.png");
+//  }
+//}
+//
+//@media (min-width: 660px) {
+//  .contacts__map-wrapper--nojs {
+//    height: 372px;
+//    background-image: url("../../img/map-tablet.png");
+//  }
+//}
+//.contacts__map-wrapper--nojs {
+//  height: 200px;
+//  background-color: #f2f2f2;
+//  background-image: url("../../img/map.png");
+//  background-size: cover;
+//}
 
 @media (min-width: $tablet-width) {
   .contacts__text {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .contacts__title {
+    margin-bottom: 57px;
+    font-size: 40px;
+    line-height: 40px;
   }
   .contacts__phone,
   .contacts__email {
@@ -62,17 +108,24 @@
     width: 100%;
   }
   .contacts__map {
-    width: $tablet-width;
     height: 375px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts__text {
+    width: 940px;
+    flex-wrap: nowrap;
+  }
+  .contacts__title {
+    margin-bottom: 70px;
+    font-size: 50px;
+    line-height: 50px;
+  }
   .contacts__item {
     width: initial;
   }
   .contacts__email {
-    width: 100%;
     order: 2;
   }
   .contacts__address {
@@ -81,7 +134,6 @@
     margin-bottom: 0;
   }
   .contacts__map {
-    width: $desktop-width;
     height: 505px;
   }
 }
