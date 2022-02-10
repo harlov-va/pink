@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
 
   font-size: 24px;
-  line-height: 30px;
+  line-height: normal;
   font-weight: 300;
   color: white;
 
@@ -24,6 +24,10 @@
   .main-header {
     min-height: 440px;
     background-image: url("../../img/intro_background_tablet.png");
+
+    .main-header__title {
+      font-size: 50px;
+    }
   }
 }
 
