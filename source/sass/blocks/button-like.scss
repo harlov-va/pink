@@ -1,11 +1,21 @@
 .button-like {
   display: flex;
   align-items: center;
+  border: none;
+  outline: none;
 
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
+
+  background-color: transparent;
   .button-like__picture {
     margin-right: 19px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .button-like__picture {
+    order: 1;
+  }  
 }
