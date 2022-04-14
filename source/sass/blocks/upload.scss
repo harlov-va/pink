@@ -50,6 +50,23 @@
   line-height: 30px;
 }
 
+// @media (min-width: 660px)
+// .control--crop::before {
+//     width: 22px;
+//     height: 22px;
+//     background-image: url(../img/crop_tablet.svg);
+// }
+// @media (min-width: 660px)
+// .control::before {
+//     content: "";
+//     position: absolute;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     left: 0;
+//     top: 20px;
+// }
+
 
 @media (min-width: $tablet-width) {
   .upload__form {
