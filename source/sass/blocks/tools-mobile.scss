@@ -1,0 +1,19 @@
+.tools-mobile__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 32px;
+    padding: 0 36px;
+    .tools-mobile__item {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        opacity: 0.3;
+    }
+    .tools-mobile__item--active {
+        fill: $color-accent;
+        opacity: 1;
+    }
+}
