@@ -5,11 +5,15 @@
   }
 }
 
+.upload__toolbar {
+  width: 100%;
+}
+
 .upload__form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px 20px 40px;
+  padding: 20px 0 40px;
   background-color: $bg-grey-lighter;
 
   & fieldset {
@@ -26,8 +30,47 @@
 .upload__buttons-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  align-items: center;
+  padding-top: 40px;
   border-top: 1px solid rgba(221, 223, 224, 0.9);
+
+  .upload__buttons {
+    width: 250px;
+    height: 55px;
+    border: 3px solid $color-accent;
+    border-radius: 27px;
+    outline: none;
+    background-color: transparent;
+
+    color: $color-accent;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .upload__buttons-send:hover {
+    color: white;
+    background-color: $color-accent;
+  }
+
+  .upload__buttons-send:active {
+    color: rgba($color: white, $alpha: .3);
+    background-color: $color-accent;
+  }
+
+  .upload__buttons-cancel {
+    color: $color-main;
+    border: 3px solid $color-main;
+    opacity: .1;
+  }
+  .upload__buttons-cancel:hover {
+    opacity: .3;
+  }
+  .upload__buttons-cancel:active {
+    color: white;
+    background-color: $color-main;
+    opacity: .3;
+  }
 
   .upload__buttons:first-child {
     margin-bottom: 12px;
@@ -40,7 +83,7 @@
 }
 
 .upload__options.tools {
-  padding: 0;
+  padding: 0 40px;
 }
 
 .upload__slogan {

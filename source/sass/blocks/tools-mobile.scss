@@ -12,8 +12,14 @@
         outline: none;
         opacity: 0.3;
     }
+    .tools-mobile__item:hover {
+        opacity: 0.5;
+    }
     .tools-mobile__item--active {
         fill: $color-accent;
+        opacity: 1;
+    }
+    .tools-mobile__item--active:hover {
         opacity: 1;
     }
 }

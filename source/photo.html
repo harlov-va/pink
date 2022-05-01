@@ -213,20 +213,16 @@
                 </svg>
               </button>
             </div>
-            <ul class="tools__list">
-              <!-- ползунки на html -->
-              <!-- <div class="editing__controls">
-                <div class="control control--crop control--active"><div class="control__bar"></div><div class="control__switcher" tabindex="0" aria-label="ползунок изменения размера"></div></div>
-                <div class="control control--fill"><div class="control__bar"></div><div class="control__switcher" tabindex="0" aria-label="ползунок изменения заливки"></div></div>
-                <div class="control control--contrast"><div class="control__bar"></div><div class="control__switcher" tabindex="0" aria-label="ползунок переключения контрастности"></div></div>
-              </div> -->
-              <li class="tools__item tool-button--active">
+            <ul class="tools__list controls">
+              <li class="tools__item control--active">
                 <svg class="tool-button" width="44" height="44" viewBox="0 0 44 44" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"
                     fill="#D22856" />
                 </svg>
+                <div class="control__bar"></div>
+                <div class="control__slider" tabindex="0" aria-label="the resize slider"></div>
               </li>
               <li class="tools__item">
                 <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,6 +233,8 @@
                     <path d="M48 40H0V43H48V40Z" fill="#283645" />
                   </g>
                 </svg>
+                <div class="control__bar"></div>
+                <div class="control__slider" tabindex="0" aria-label="the fill slider"></div>
               </li>
               <li class="tools__item">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -249,13 +247,14 @@
                       fill="#283645" />
                   </g>
                 </svg>
+                <div class="control__bar"></div>
+                <div class="control__slider" tabindex="0" aria-label="the contrast slider"></div>
               </li>
             </ul>
-            <img class="tool-range" src="img/upload_scale_crop.svg" width="240" height="14" alt="Range">
           </fieldset>
           <div class="upload__buttons-wrapper">
-            <button class="upload__buttons upload__buttons--active" type="submit">Send</button>
-            <button class="upload__buttons" type="reset">Cancel</button>
+            <button class="upload__buttons upload__buttons-send upload__buttons--active" type="submit">Send</button>
+            <button class="upload__buttons upload__buttons-cancel" type="reset">Cancel</button>
           </div>
         </div>
       </form>
