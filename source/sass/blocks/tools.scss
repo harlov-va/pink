@@ -1,5 +1,75 @@
 .tools {
+    padding: 0 40px;
     .tools__list {
         margin-bottom: 28px;
+    }
+    .tools__item {
+        display: none;
+    }
+    .tools__item--active {
+        display: initial;
+    }
+    .tools__item-icon {
+        display: none;
+    }
+    .tools__item-bar {
+        position: relative;
+        height: 2px;
+        background-color: black;
+    }
+
+    .tools__item-slider {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        left: calc(100% - 47px);
+        border-radius: 50%;
+        background-color: $bg-grey-lighter;
+        border: 2px solid $color-accent;
+
+        transform: translate(0,-50%);
+    }
+    
+    .tools__item-slider:focus {
+        background-color: $color-accent;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .tools {
+        padding: 0;
+        .tools__item {
+            display: flex;
+            align-items: center;
+            height: 72px;
+            border-bottom: 1px solid $color-main-lightest;
+        }
+        .tools__item-icon {
+            display: initial;
+            width: 24px;
+            height: 24px;
+            margin-right: 30px;
+            
+            path {
+                fill: $color-accent;               
+            }
+        }
+
+        .tools__item-bar {
+            width: 202px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .tools {
+        .tools__item-icon {
+            width: 48px;
+            height: 48px;
+        }
+        .tools__item-bar {
+            width: 288px;
+        }
     }
 }

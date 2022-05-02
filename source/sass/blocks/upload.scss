@@ -82,33 +82,12 @@
   margin-bottom: 44px;
 }
 
-.upload__options.tools {
-  padding: 0 40px;
-}
-
 .upload__slogan {
   display: block;
   margin-bottom: 50px;
 
   line-height: 30px;
 }
-
-// @media (min-width: 660px)
-// .control--crop::before {
-//     width: 22px;
-//     height: 22px;
-//     background-image: url(../img/crop_tablet.svg);
-// }
-// @media (min-width: 660px)
-// .control::before {
-//     content: "";
-//     position: absolute;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     left: 0;
-//     top: 20px;
-// }
 
 
 @media (min-width: $tablet-width) {
@@ -117,9 +96,11 @@
     justify-content: space-between;
     padding: 54px 20px 54px;
   }
-
+  .upload__buttons-wrapper {
+    border: none;
+  }
   .upload__toolbar {
-    width: 300px;
+    width: 275px;
   }
   .upload__slogan {
     margin: 0 0 73px 0;
@@ -127,6 +108,8 @@
     font-size: 18px;
   }
   .upload__picture {
+    width: 300px;
+    height: 400px;
     margin-bottom: 0;
   }
 }
@@ -136,12 +119,19 @@
     padding: 57px 130px 57px;
     background-color: $bg-grey-lighter;
   }
+  .upload__toolbar {
+    width: 410px;
+  }
   .upload__slogan {
     margin: 0 0 70px 0;
   }
   .upload__buttons-wrapper {
     flex-direction: row;
     justify-content: space-between;
+
+    .upload__buttons { 
+      width: 183px;
+    }
       
     .upload__buttons:first-child {
       margin-bottom: 0;

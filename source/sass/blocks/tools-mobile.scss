@@ -23,3 +23,9 @@
         opacity: 1;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .tools-mobile__list {
+        display: none;
+    }
+}
