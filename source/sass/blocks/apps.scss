@@ -1,5 +1,6 @@
 .apps {
   margin: 41px 0 44px;
+  padding: 41px 20px 44px;
   background-color: #f2f2f2;
   border: none;
 
@@ -22,7 +23,15 @@
 
     background-color: white;
     border-radius: 50%;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $bg-grey;
+  }
+
+  .apps__radio-button:hover {
+    border: 2px solid $color-main;
+  }
+
+  .apps__radio-button:active {
+    border: 2px solid $color-accent;
   }
 
   .apps__radio-button.apps__radio-button--active {
@@ -67,6 +76,7 @@
   .apps {
     order: 2;
     margin: 41px 20px 44px;
+    padding: 55px 60px 55px;
     background: none;
     border: 2px solid $bg-grey;
   }
@@ -82,6 +92,7 @@
   .apps {
     width: 48%;
     margin: 0 0 44px;
+    padding: 57px 76px 57px;
   }
 }
 

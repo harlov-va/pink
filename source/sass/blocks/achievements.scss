@@ -1,5 +1,5 @@
 .achievements {
-  margin: 44px 0;
+  padding: 41px 20px 44px;
   background-color: #f2f2f2;
   border: none;
 
@@ -16,8 +16,9 @@
   }
 }
 
-.achievements__title {
-  margin-bottom: 42px;
+.achievements__title {  
+  margin: 0 0 42px 0;
+  padding: 0;
   line-height: 30px;
   color: #d22856;
   text-align: center;
@@ -28,6 +29,7 @@
   display: none;
   margin: 0 auto;
 
+  font-size: 14px;
   line-height: 30px;
   color: $color-accent;
   text-transform: uppercase;
@@ -37,8 +39,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  // padding-left: 52px;
-  // text-align: center;
   font-size: 18px;
   line-height: 30px;
 
@@ -57,6 +57,14 @@
     background-size: 26px 20px;
 
     border: 2px solid #e5e5e5;
+  }
+
+  &:hover::before {
+    border: 2px solid $color-main;
+  }
+
+  &:active::before {
+    border: 2px solid $color-accent;
   }
 
   // &::after {
@@ -85,6 +93,7 @@
   .achievements {
     order: 4;
     margin: 44px 20px;
+    padding: 54px 60px 50px;
     background: none;
     border: 2px solid $bg-grey;
   }
@@ -100,7 +109,6 @@
   .achievements {
     width: 100%;
     margin: 44px 0;
-    padding: 0 60px;
   }
 
   .achievements__list {

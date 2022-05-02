@@ -7,6 +7,7 @@
   box-shadow: 0 7px 15px 15px rgba(0, 0, 0, 0.15);
 
   .modal__title {
+    font-size: 18px;
     color: black;
     margin-top: 0;
     margin-bottom: 33px;
@@ -35,6 +36,13 @@
 @media (min-width: $tablet-width) {
   .modal {
     width: 462px;
+    .modal__title {
+      font-size: 30px;
+    }
+  
+    .modal__text {
+      font-size: 18px;
+    }
   }
 
   .modal__text-wrapper {

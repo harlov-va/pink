@@ -1,18 +1,22 @@
 .main-form {
-  padding-top: 54px;
-
   fieldset {
     font-size: 18px;
     line-height: 30px;
   }
+  input {
+    border: 2px solid $bg-grey;
+  }
+  input:hover {
+    border: 2px solid $color-main;
+  }
+  input[type="text"]:active {
+    border: 2px solid $color-accent;
+  }
 }
 
-.main-form__intro {
-  margin-bottom: 47px;
-  margin-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-
+.main-form__intro {  
+  margin: 0;
+  padding: 54px 20px 47px;
   line-height: 30px;
   text-align: center;
 }
@@ -58,7 +62,8 @@
   }
 
   .main-form__intro {
-    margin-bottom: 75px;
+    padding: 100px 20px 76px;
+    font-size: 18px;
   }
 
   .main-form__intro-fill-form {
@@ -85,8 +90,7 @@
     margin: 0 130px;
   }
   .main-form__intro {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding: 100px 130px 83px;
   }
   .main-form__footer {
     width: 100%;

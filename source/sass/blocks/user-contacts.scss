@@ -45,14 +45,18 @@
 
 
 @media (min-width: $tablet-width) {
+  .user-contacts {
+    order: 3;
+    padding: 47px 60px 33px;
+    border: 2px solid $bg-grey;
+  }
   .user-contacts__item {
     & label {
       order: 2;
     }
-  }
-  .user-contacts {
-    order: 3;
-    border: 2px solid $bg-grey;
+    & input {
+      margin-bottom: 21px;
+    }
   }
   .user-contacts__title {
     display: initial;
@@ -60,16 +64,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-contacts {
+    width: 100%;
+    margin: 41px 0 44px;
+    padding: 44px 60px 22px;
+  }
+  .user-contacts__item {   
+    margin-bottom: 0;
+  }
   .user-contacts__list {
     display: flex;
     justify-content: space-around;
   }
-
   .user-contacts__list > li {
     width: 40%;
-  }
-  .user-contacts {
-    width: 100%;
-    margin: 41px 0 44px;
   }
 }

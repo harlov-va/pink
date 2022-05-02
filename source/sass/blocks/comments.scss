@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 41px 0 52px;
+  padding: 0 20px;
   border: none;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .comments__description {
-  width: 276px;
+  width: 100%;
   height: 197px;
 
   padding: 20px 20px;
@@ -37,6 +38,7 @@
   .comments {
     order: 5;
     margin: 41px 20px 52px;
+    padding: 47px 60px 53px;
     border: 2px solid $bg-grey;
   }
   .comments__title {
@@ -54,6 +56,7 @@
   .comments {
     width: 100%;
     margin: 41px 0 52px;
+    padding: 44px 60px 45px;
   }
   .comments__description {
     width: 816px;

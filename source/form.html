@@ -140,6 +140,7 @@
         </form>
       </section>
     </main>
+
     <footer class="footer container">
       <div class="footer__logo">
         <a class="footer__logo-link">
@@ -155,21 +156,18 @@
         <b class="social__title visually-hidden">We are in social media</b>
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#"
-               aria-label="Go to the app page on Twitter"></a>
+            <a class="socials__link socials__link--twitter" href="#" aria-label="Go to the app page on Twitter"></a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#"
-               aria-label="Go to the app page on Facebook"></a>
+            <a class="socials__link socials__link--facebook" href="#" aria-label="Go to the app page on Facebook"></a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--youtube" href="#"
-               aria-label="Go to the app page on Youtube"></a>
+            <a class="socials__link socials__link--youtube" href="#" aria-label="Go to the app page on Youtube"></a>
           </li>
         </ul>
       </div>
       <div class="footer__copyright">
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Made by:
+        <a class="footer__copyright-link" href="#">Made by:
           <svg class="footer__copyright-image" width="105" height="41">
             <use xlink:href="img/sprite.svg#starsky-hutch"></use>
           </svg>
@@ -177,7 +175,7 @@
       </div>
     </footer>
 
-    <section class="modal modal--success">
+    <section class="modal modal--success visually-hidden">
       <h2 class="visually-hidden">Successful sending</h2>
       <div class="modal__text-wrapper">
         <h4 class="modal__title">Your application has been applied</h4>
@@ -189,7 +187,7 @@
       </div>
     </section>
 
-    <section class="modal modal--failure">
+    <section class="modal modal--failure visually-hidden">
       <h2 class="visually-hidden">Failure sending</h2>
       <div class="modal__text-wrapper">
         <h4 class="modal__title">Something has happened wrong</h4>
@@ -200,5 +198,7 @@
         <button class="modal__button button modal__button--failure">ok</button>
       </div>
     </section>
+    <script src="js/lodash.js"></script>
+    <script src="js/nav.min.js"></script>
   </body>
 </html>
