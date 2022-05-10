@@ -1,6 +1,4 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 49px;
   padding: 0;
 
@@ -10,8 +8,10 @@
 }
 
 .advantages__wrapper {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-auto-rows: max-content;
 }
 
 .advantages__intro,
@@ -97,8 +97,10 @@
   }
 
   .advantages__wrapper {
+    grid-auto-rows: unset;
+    grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
-    flex-direction: row;
+    // flex-direction: row;
   }
 
   .advantages__list {
@@ -122,7 +124,9 @@
     padding-bottom: 52px;
   }
   .advantages__wrapper {
-    flex-direction: column;
+    grid-template-columns: unset;
+    grid-auto-rows: auto;
+    // flex-direction: column;
   }
 
   .advantages__intro,

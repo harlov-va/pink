@@ -1,6 +1,6 @@
 .stors {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
   font-weight: 300;
 
   .stors__buttons-wrapper {
@@ -79,8 +79,9 @@
 
 @media (min-width: $tablet-width) {
   .stors {
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 20px;
     padding-bottom: 112px;
 
     .stors__buttons-wrapper {

@@ -2,7 +2,8 @@
   display: none;
 
   .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
     align-items: center;
   }
@@ -31,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .round-diagram {
-    display: initial;
+    display: block;
   }
   .facts {
     width: 580px;
@@ -40,10 +41,10 @@
 
 @media (min-width: $desktop-width) {
   .round-diagram {
+    background-color: $bg-grey-lighter;
     .container {
       min-height: auto;
-      padding-bottom: 67px;
-      background-color: $bg-grey-lighter;
+      padding-bottom: 67px; 
 
       .facts {
         width: 525px;
