@@ -1,8 +1,8 @@
 const resize = () => {
-  if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 660) {
     document.querySelector('.footer').style.display = 'none';
   } else {
-    document.querySelector('.footer').style.display = 'flex';
+    document.querySelector('.footer').style.display = 'grid';
   }
 }
 

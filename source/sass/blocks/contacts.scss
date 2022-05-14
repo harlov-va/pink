@@ -1,5 +1,3 @@
-@import "../utils/variables.scss";
-
 .contacts {
   padding-top: 47px;
 
@@ -7,8 +5,7 @@
   font-weight: 300;
 
   .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
   }
 
@@ -21,23 +18,27 @@
   .contacts__item {
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
   }
 
-  .contacts__item a {
+  .contacts__link {
     color: #d22856;
     font-weight: 300;
     text-decoration: none;
   }
-  .contacts__item a:hover {
+  .contacts__link:hover {
     color: $color-main;
     text-decoration: underline;
   }
-  .contacts__item a:active {
+  .contacts__link:active {
     opacity: 0.3;
   }
 }
 
 .contacts__text {
+  display: grid;
+  row-gap: 28px;
+  justify-content: center;
   margin-bottom: 30px;
   @include reset();
 }
@@ -91,21 +92,22 @@
 
 @media (min-width: $tablet-width) {
   .contacts__text {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-content: unset;
+    row-gap: 48px;
   }
   .contacts__title {
     margin-bottom: 57px;
     font-size: 40px;
     line-height: 40px;
   }
-  .contacts__phone,
-  .contacts__email {
-    width: 50%;
-  }
   .contacts__address {
-    width: 100%;
+    grid-column: 1 / 3;
+  }
+  .contacts__link {
+    display: block;
+    padding-top: 14px;
   }
   .contacts__map {
     height: 375px;
@@ -114,22 +116,20 @@
 
 @media (min-width: $desktop-width) {
   .contacts__text {
-    width: 940px;
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: unset;
+    justify-content: space-between;
   }
   .contacts__title {
     margin-bottom: 70px;
     font-size: 50px;
     line-height: 50px;
   }
-  .contacts__item {
-    width: initial;
-  }
   .contacts__email {
     order: 2;
   }
   .contacts__address {
-    width: initial;
+    grid-column: unset;
     order: 1;
     margin-bottom: 0;
   }

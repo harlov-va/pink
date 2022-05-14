@@ -1,6 +1,7 @@
 .slider__toggles {
   justify-self: center;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   width: 60px;
   justify-content: space-between;
   align-items: center;
