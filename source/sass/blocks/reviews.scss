@@ -104,11 +104,17 @@
     // flex-direction: row;
     // justify-content: space-between;
     grid-auto-rows: unset;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, min-content);
+    grid-template-areas: 
+      "Left Top Right"
+      "Left Middle Right"
+      "Left Middle Right"
+    ;
+    // grid-template-columns: repeat(3, auto);
+    // grid-template-rows: repeat(2, min-content);
   }
   .reviews__control-quotes {
-    grid-column: span 3;
+    grid-area: "Top";
+    // grid-column: span 3;
     // width: 100%;
 
     img {
@@ -124,6 +130,16 @@
   .reviews__control-back,
   .reviews__control-forward {
     display: initial;
+  }
+  
+  .reviews__control-back {
+    grid-area: Left;
+  }
+  .reviews__list {
+    grid-area: Middle;
+  }
+  .reviews__control-forward {
+    grid-area: Right;
   }
 
   .reviews__author-name {
