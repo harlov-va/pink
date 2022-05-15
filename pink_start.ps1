@@ -1,5 +1,5 @@
 D:
-cd 'D:\Downloads\HTML Academy Профессиональный HTML и CSS, уровень 2\pink'
+cd 'D:\Project\pink\'
 git pull
 yarn install
 yarn start
