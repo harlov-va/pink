@@ -6,7 +6,7 @@ It is a project of one my client. We have created the adaptive and responsive si
 
 ### The main features:
 
-- Mobile methodology
+- "Mobile first" methodology
 - Preprocessors and automation
 - Responsive grids
 - Responsive decorative elements
