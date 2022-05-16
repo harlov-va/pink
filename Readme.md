@@ -2,7 +2,8 @@
 
 ## Description
 
-It is a project of one my client. We have created the adaptive and responsive site. In addition, we have turned on a support of retina. 
+It is a project of one my client. We have created the adaptive and responsive site. In addition, we have turned on a support of retina.
+Just resize your browser and you will see everything. 
 
 ### The main features:
 
